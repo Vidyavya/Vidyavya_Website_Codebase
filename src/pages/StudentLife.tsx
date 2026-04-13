@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Layout from '@/components/layout/Layout';
+import SEO from '@/components/SEO';
 import Section from '@/components/ui/Section';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { Button } from '@/components/ui/button';
@@ -19,6 +20,11 @@ const StudentLife = () => {
   const { openModal } = useRequestCallback();
   return (
     <Layout>
+      <SEO 
+        title="Student Life | Vidyavya"
+        description="Experience a transformative journey at Vidyavya with mentorship, real-world projects, and a work-like environment in Pune."
+        url="https://www.vidyavya.com/student-life"
+      />
       {/* Hero */}
       <section className="pt-6 pb-10 md:pt-10 md:pb-16 bg-gradient-to-b from-cream to-background border-b border-border/50">
         <div className="container-custom">

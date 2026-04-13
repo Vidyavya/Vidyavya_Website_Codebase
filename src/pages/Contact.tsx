@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Layout from '@/components/layout/Layout';
+import SEO from '@/components/SEO';
 import Section from '@/components/ui/Section';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -98,6 +99,11 @@ const Contact = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Contact Us | Vidyavya"
+        description="Get in touch with Vidyavya for any queries regarding our AI/ML and Data Engineering programs."
+        url="https://www.vidyavya.com/contact"
+      />
       {/* Hero */}
       <section className="pt-12 pb-8 md:pt-20 md:pb-12 bg-gradient-to-b from-cream to-background">
         <div className="container-custom">

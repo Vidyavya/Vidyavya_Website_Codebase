@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Layout from '@/components/layout/Layout';
+import SEO from '@/components/SEO';
 import Section from '@/components/ui/Section';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { Button } from '@/components/ui/button';
@@ -40,6 +41,11 @@ const Programs = () => {
   const { openModal } = useRequestCallback();
   return (
     <Layout>
+      <SEO 
+        title="Programs | Vidyavya"
+        description="Explore Vidyavya's AI/ML and Data Engineering programs designed with hands-on projects, mentorship, and industry exposure."
+        url="https://www.vidyavya.com/programs"
+      />
       {/* Hero */}
       <section className="pt-12 pb-8 md:pt-20 md:pb-12 bg-gradient-to-b from-cream to-background">
         <div className="container-custom">

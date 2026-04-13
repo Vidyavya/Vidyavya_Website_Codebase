@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '@/components/layout/Layout';
+import SEO from '@/components/SEO';
 import Section from '@/components/ui/Section';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { motion } from 'framer-motion';
@@ -44,6 +45,11 @@ const DataEngineering = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Data Engineering Program | Vidyavya"
+        description="A 6-month Data Engineering program at Vidyavya with real-world projects, mentorship, and career readiness training in Pune."
+        url="https://www.vidyavya.com/programs/data-engineering"
+      />
       {/* Dark + Gradient Premium Hero Section */}
       <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden bg-[#0A1628] text-white">
         {/* Abstract background elements */}

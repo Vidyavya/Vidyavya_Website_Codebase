@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '@/components/layout/Layout';
+import SEO from '@/components/SEO';
 import Section from '@/components/ui/Section';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { motion } from 'framer-motion';
@@ -48,6 +49,11 @@ const AIMLEngineering = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="AI/ML Engineering Program | Vidyavya"
+        description="Master AI and ML engineering at Vidyavya through hands-on learning, live projects, and expert mentorship in Pune."
+        url="https://www.vidyavya.com/programs/ai-ml-engineering"
+      />
       {/* Dark + Gradient Premium Hero Section */}
       <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden bg-[#0A0611] text-white">
         {/* Abstract background elements */}

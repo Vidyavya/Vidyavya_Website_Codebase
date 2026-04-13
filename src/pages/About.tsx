@@ -1,4 +1,5 @@
 import Layout from '@/components/layout/Layout';
+import SEO from '@/components/SEO';
 import Section from '@/components/ui/Section';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { motion } from 'framer-motion';
@@ -44,6 +45,11 @@ const founders = [
 const About = () => {
   return (
     <Layout>
+      <SEO 
+        title="About Us | Vidyavya"
+        description="Learn about Vidyavya's mission to train the next generation of AI/ML and Data Engineering professionals through real-world learning."
+        url="https://www.vidyavya.com/about"
+      />
       {/* Hero */}
       <section className="pt-12 pb-16 md:pt-20 md:pb-24 bg-gradient-to-b from-cream to-background">
         <div className="container-custom">

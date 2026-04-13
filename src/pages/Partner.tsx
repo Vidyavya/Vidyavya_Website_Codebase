@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Layout from '@/components/layout/Layout';
+import SEO from '@/components/SEO';
 import Section from '@/components/ui/Section';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { Button } from '@/components/ui/button';
@@ -81,6 +82,11 @@ const Partner = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Partner With Us | Vidyavya"
+        description="Partner with Vidyavya to bridge the gap between academia and industry. We work with companies and colleges to build job-ready tech talent."
+        url="https://www.vidyavya.com/partner"
+      />
       <div className="w-full overflow-hidden">
       {/* Hero */}
       <section className="pt-10 pb-8 md:pt-20 md:pb-12 bg-gradient-to-b from-cream to-background">
