@@ -67,19 +67,39 @@ const PartnerForm = ({ open, onOpenChange }: PartnerFormProps) => {
 
     const onSubmit = async (data: FormValues) => {
         setIsSubmitting(true);
-        // Simulate API call
-        await new Promise((resolve) => setTimeout(resolve, 1500));
-        console.log('Form submitted:', data);
-        setIsSubmitting(false);
-        setIsSuccess(true);
+        
+        try {
+            const response = await fetch("https://script.google.com/macros/s/AKfycbwZRthYiKOXAKrIV3cvwC7ZgDm2imI68eAxlLdGO7XAYQ_2D4kn02mGxaRvoEViRrmx/exec", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "text/plain;charset=utf-8",
+                },
+                body: JSON.stringify(data),
+            });
 
-        // Reset after showing success for a moment
-        setTimeout(() => {
-            setIsSuccess(false);
-            setStep(1);
-            form.reset();
-            onOpenChange(false);
-        }, 10000);
+            const result = await response.json();
+
+            if (result.status === "success") {
+                console.log('Form submitted successfully:', data);
+                setIsSuccess(true);
+                
+                // Reset after showing success for a moment
+                setTimeout(() => {
+                    setIsSuccess(false);
+                    setStep(1);
+                    form.reset();
+                    onOpenChange(false);
+                }, 5000); // Reduced to 5 seconds for better UX
+            } else {
+                console.error("Submission error:", result);
+                alert("Something went wrong. Please try again.");
+            }
+        } catch (error) {
+            console.error("Submission error:", error);
+            alert("Failed to submit. Please check your connection.");
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     const nextStep = async () => {
