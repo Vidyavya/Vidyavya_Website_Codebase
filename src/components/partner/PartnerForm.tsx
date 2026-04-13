@@ -69,34 +69,31 @@ const PartnerForm = ({ open, onOpenChange }: PartnerFormProps) => {
         setIsSubmitting(true);
         
         try {
-            const response = await fetch("https://script.google.com/macros/s/AKfycbwZRthYiKOXAKrIV3cvwC7ZgDm2imI68eAxlLdGO7XAYQ_2D4kn02mGxaRvoEViRrmx/exec", {
+            // Using 'no-cors' mode to bypass preflight issues with Google Apps Script
+            await fetch("https://script.google.com/macros/s/AKfycbwZRthYiKOXAKrIV3cvwC7ZgDm2imI68eAxlLdGO7XAYQ_2D4kn02mGxaRvoEViRrmx/exec", {
                 method: "POST",
+                mode: "no-cors",
                 headers: {
                     "Content-Type": "text/plain;charset=utf-8",
                 },
                 body: JSON.stringify(data),
             });
 
-            const result = await response.json();
+            // With 'no-cors', we assume success if the fetch call doesn't throw an error
+            console.log('Form submission attempted:', data);
+            setIsSuccess(true);
+            
+            // Reset after showing success for a moment
+            setTimeout(() => {
+                setIsSuccess(false);
+                setStep(1);
+                form.reset();
+                onOpenChange(false);
+            }, 5000);
 
-            if (result.status === "success") {
-                console.log('Form submitted successfully:', data);
-                setIsSuccess(true);
-                
-                // Reset after showing success for a moment
-                setTimeout(() => {
-                    setIsSuccess(false);
-                    setStep(1);
-                    form.reset();
-                    onOpenChange(false);
-                }, 5000); // Reduced to 5 seconds for better UX
-            } else {
-                console.error("Submission error:", result);
-                alert("Something went wrong. Please try again.");
-            }
         } catch (error) {
-            console.error("Submission error:", error);
-            alert("Failed to submit. Please check your connection.");
+            console.error("Submission error details:", error);
+            alert("Failed to submit. Please check your script deployment permissions.");
         } finally {
             setIsSubmitting(false);
         }
