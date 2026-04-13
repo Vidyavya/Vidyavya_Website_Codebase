@@ -70,7 +70,7 @@ const PartnerForm = ({ open, onOpenChange }: PartnerFormProps) => {
         
         try {
             // Using 'no-cors' mode to bypass preflight issues with Google Apps Script
-            await fetch("https://script.google.com/macros/s/AKfycbwZRthYiKOXAKrIV3cvwC7ZgDm2imI68eAxlLdGO7XAYQ_2D4kn02mGxaRvoEViRrmx/exec", {
+            await fetch("https://script.google.com/macros/s/AKfycby_RK3rrYye1sbZUtghMFg7qP4F7O_YSqnVNdu4TjEN2-2jpjSah9rp5qWDW_53ddLq/exec", {
                 method: "POST",
                 mode: "no-cors",
                 headers: {
