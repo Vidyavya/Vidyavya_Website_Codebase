@@ -58,38 +58,57 @@ const Contact = () => {
 
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      // Real submission to Google Sheets
+      await fetch("https://script.google.com/macros/s/AKfycbwpU97k_i2Vx-SP0JeIiwx7AMJ6L28e8GpLQtmStJvzlplvpwrdUWmNLRusm-6qGQ/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "text/plain;charset=utf-8",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    toast({
-      title: "Request Submitted!",
-      description: "We'll get in touch with you shortly.",
-    });
+      setIsSubmitted(true);
+      
+      // Clear form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
+      });
+
+    } catch (error) {
+      console.error("Submission error:", error);
+      toast({
+        title: "Submission Failed",
+        description: "Please check your connection and try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSubmitted) {
     return (
       <Layout>
-        <section className="min-h-[70vh] flex items-center justify-center">
+        <section className="min-h-[70vh] flex items-center justify-center py-20 bg-gradient-to-b from-cream to-background">
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            className="text-center px-4"
+            className="w-full max-w-lg mx-auto p-12 bg-card rounded-3xl shadow-card text-center border border-primary/10"
           >
-            <div className="w-20 h-20 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center">
-              <CheckCircle className="w-10 h-10 text-primary" />
+            <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <CheckCircle className="w-10 h-10 text-green-600" />
             </div>
-            <h1 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mb-4">
-              Thank You!
-            </h1>
-            <p className="font-body text-lg text-muted-foreground mb-8 max-w-md mx-auto">
-              Your callback request has been submitted. Our team will get in touch with you shortly.
+            <h2 className="text-3xl font-heading font-semibold text-foreground mb-4">Message Received!</h2>
+            <p className="text-muted-foreground text-lg mb-8">
+              Thank you for reaching out. Our team has received your message and will get back to you shortly.
             </p>
-            <Button variant="cta" onClick={() => setIsSubmitted(false)}>
-              Submit Another Request
+            <Button variant="cta" onClick={() => setIsSubmitted(false)} className="w-full">
+              Submit Another Message
             </Button>
           </motion.div>
         </section>
