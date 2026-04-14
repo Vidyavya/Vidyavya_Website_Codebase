@@ -72,7 +72,7 @@ const TestimonialCarousel = () => {
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="absolute inset-x-4 top-0"
           >
-            <div className="bg-card rounded-xl p-6 md:p-8 shadow-card hover:shadow-xl transition-shadow w-full">
+            <div className="bg-card rounded-xl p-6 md:p-8 shadow-card hover:shadow-xl transition-all duration-300 w-full flex flex-col min-h-[320px] md:min-h-[350px]">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-primary text-primary" />
@@ -109,7 +109,7 @@ const TestimonialCarousel = () => {
             {testimonials.map((testimonial, index) => (
               <div
                 key={`testimonial-1-${index}`}
-                className="flex-shrink-0 w-[350px] md:w-[400px] bg-card rounded-xl p-6 shadow-card transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl"
+                className="flex-shrink-0 w-[350px] md:w-[400px] bg-card rounded-xl p-6 shadow-card transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl flex flex-col min-h-[280px]"
               >
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -119,7 +119,7 @@ const TestimonialCarousel = () => {
                 <p className="font-body text-foreground mb-6 leading-relaxed">
                   "{testimonial.feedback}"
                 </p>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 mt-auto">
                   <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center shrink-0">
                     <span className="font-heading font-semibold text-foreground">
                       {testimonial.name.split(' ').map(n => n[0]).join('')}
@@ -142,7 +142,7 @@ const TestimonialCarousel = () => {
             {testimonials.map((testimonial, index) => (
               <div
                 key={`testimonial-2-${index}`}
-                className="flex-shrink-0 w-[350px] md:w-[400px] bg-card rounded-xl p-6 shadow-card transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl"
+                className="flex-shrink-0 w-[350px] md:w-[400px] bg-card rounded-xl p-6 shadow-card transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl flex flex-col min-h-[280px]"
               >
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -152,7 +152,7 @@ const TestimonialCarousel = () => {
                 <p className="font-body text-foreground mb-6 leading-relaxed">
                   "{testimonial.feedback}"
                 </p>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 mt-auto">
                   <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center shrink-0">
                     <span className="font-heading font-semibold text-foreground">
                       {testimonial.name.split(' ').map(n => n[0]).join('')}
