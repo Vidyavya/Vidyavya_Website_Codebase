@@ -73,7 +73,7 @@ const DataEngineering = () => {
             </motion.h1>
 
             <motion.p variants={fadeIn} className="font-body text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl mb-10">
-              Build the modern data platforms, pipelines, and analytics infrastructure that power today's technology companies — from e-commerce to fintech and beyond.
+              Build the modern data platforms, pipelines, and analytics infrastructure that power today's technology companies - from e-commerce to fintech and beyond.
             </motion.p>
 
             <motion.div variants={fadeIn} className="flex flex-wrap gap-4 mb-10">
@@ -83,7 +83,7 @@ const DataEngineering = () => {
               </div>
               <div className="px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center">
                 <Users className="w-4 h-4 mr-2 text-[#A8D8EA]" />
-                Classroom / Hybrid
+                Classroom
               </div>
               <div className="px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center">
                 <Hammer className="w-4 h-4 mr-2 text-[#A8D8EA]" />
@@ -95,9 +95,7 @@ const DataEngineering = () => {
               </div>
             </motion.div>
 
-            <motion.span variants={fadeIn} className="inline-block font-accent text-sm md:text-base font-semibold tracking-widest text-[#A8D8EA] uppercase opacity-90 mt-4 border-t border-white/10 pt-6 w-full max-w-lg">
-              Vidyavya Advanced Engineering Career Programs
-            </motion.span>
+            
           </motion.div>
         </div>
       </section>
@@ -139,7 +137,7 @@ const DataEngineering = () => {
             className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6"
           >
             {[
-              { icon: Settings, title: "Real Engineering Practices", desc: "Learn how data engineers work in production at scale — not just theory.", bg: "bg-slate-50 border-slate-100" },
+              { icon: Settings, title: "Real Engineering Practices", desc: "Learn how data engineers work in production at scale - not just theory.", bg: "bg-slate-50 border-slate-100" },
               { icon: Hammer, title: "Hands-On Projects", desc: "Build pipelines, warehouses, and dashboards with industry-standard tools.", bg: "bg-[#A8D8EA]/5 border-[#A8D8EA]/20" },
               { icon: Telescope, title: "Production Thinking", desc: "Design systems with resilience, observability, and scalability from day one.", bg: "bg-slate-50 border-slate-100" },
               { icon: Target, title: "Career Readiness", desc: "Graduate with a portfolio, technical depth, and interview confidence.", bg: "bg-[#A8D8EA]/5 border-[#A8D8EA]/20" }
@@ -178,10 +176,10 @@ const DataEngineering = () => {
               title: "Engineering Foundations",
               topics: [
                 "Intro to Data Engineering - roles, data lifecycles & architecture",
-                "Linux & Shell Scripting — file systems, bash, cron & automation",
-                "Git & GitHub — version control, branching & pull requests",
+                "Linux & Shell Scripting - file systems, bash, cron & automation",
+                "Git & GitHub - version control, branching & pull requests",
                 "Python for data ingestion & API interaction",
-                "SQL — queries, aggregations, window functions & performance tuning"
+                "SQL - queries, aggregations, window functions & performance tuning"
               ],
               project: "Month 1 Project\nBuild a data ingestion script that pulls from public APIs and design SQL queries to analyze large transactional datasets."
             },
@@ -191,10 +189,10 @@ const DataEngineering = () => {
               topics: [
                 "Data normalization & dimensional modeling",
                 "Star schema vs. snowflake schema design",
-                "ETL / ELT — batch processing & incremental loads",
+                "ETL / ELT - batch processing & incremental loads",
                 "Pipeline idempotency, retry strategies & error handling",
                 "Data quality, validation & anomaly detection",
-                "OLTP vs. OLAP — building a mini data warehouse"
+                "OLTP vs. OLAP - building a mini data warehouse"
               ],
               project: "Month 2 Project\nBuild a complete end-to-end ETL pipeline from raw source data to a structured analytical layer."
             },
@@ -202,11 +200,11 @@ const DataEngineering = () => {
               month: "Month 3",
               title: "Distributed Data Systems",
               topics: [
-                "Distributed computing — cluster computing & parallel processing",
-                "Apache Spark — RDDs, DataFrames & PySpark transformations",
+                "Distributed computing - cluster computing & parallel processing",
+                "Apache Spark - RDDs, DataFrames & PySpark transformations",
                 "Data partitioning & shuffle operations",
                 "Optimizing distributed data processing jobs",
-                "Apache Kafka — event streaming, producers & consumers",
+                "Apache Kafka - event streaming, producers & consumers",
                 "Real-time data pipeline design"
               ]
             },
@@ -214,18 +212,18 @@ const DataEngineering = () => {
               month: "Month 4",
               title: "Cloud & Modern Data Stack",
               topics: [
-                "AWS & GCP — compute, storage & networking fundamentals",
-                "Cloud storage — S3, GCS & data lake architecture",
+                "AWS & GCP - compute, storage & networking fundamentals",
+                "Cloud storage - S3, GCS & data lake architecture",
                 "Lifecycle management for petabyte-scale datasets",
-                "Apache Airflow — DAGs, scheduling & monitoring pipelines",
-                "Analytics Engineering with dbt — tested transformation layers"
+                "Apache Airflow - DAGs, scheduling & monitoring pipelines",
+                "Analytics Engineering with dbt - tested transformation layers"
               ]
             },
             {
               month: "Month 5",
               title: "Analytics & Business Data",
               topics: [
-                "Business metrics — customer analytics & financial reporting KPIs",
+                "Business metrics - customer analytics & financial reporting KPIs",
                 "BI & Dashboard design using Power BI & Tableau concepts",
                 "Visual storytelling for non-technical stakeholders",
                 "Deep dive into fact tables, dimension tables & data marts",
@@ -236,10 +234,10 @@ const DataEngineering = () => {
               month: "Month 6",
               title: "System Design & Production",
               topics: [
-                "Data platform architecture — lakes, batch & streaming patterns",
-                "Security & compliance — GDPR, CCPA, access control",
+                "Data platform architecture - lakes, batch & streaming patterns",
+                "Security & compliance - GDPR, CCPA, access control",
                 "Data governance frameworks",
-                "Monitoring & observability — logging pipelines & incident management",
+                "Monitoring & observability - logging pipelines & incident management",
                 "Production runbooks & structured incident response"
               ]
             }
@@ -253,7 +251,7 @@ const DataEngineering = () => {
               className="group flex flex-col md:flex-row bg-white rounded-3xl border border-border/60 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-black/5 transition-all duration-300"
             >
               <div className="bg-[#34495E] text-white p-8 md:p-10 md:w-1/3 shrink-0 flex flex-col justify-center relative overflow-hidden">
-                <span className="font-accent text-sm font-semibold tracking-widest uppercase text-[#A8D8EA] mb-3 relative z-10">{item.month}</span>
+                
                 <h3 className="font-heading text-2xl md:text-3xl font-bold leading-snug relative z-10">{item.title}</h3>
 
                 {/* Abstract shape */}
@@ -268,21 +266,18 @@ const DataEngineering = () => {
                     </li>
                   ))}
                 </ul>
-                {item.project && (
-                  <div className="bg-slate-50 border border-slate-200/60 p-6 rounded-2xl mt-8">
-                    <span className="block font-heading font-bold text-sm uppercase tracking-widest text-[#34495E] mb-2">{item.project.split('\n')[0]}</span>
-                    <p className="font-body text-sm font-medium text-foreground/80 leading-relaxed">{item.project.split('\n')[1]}</p>
-                  </div>
-                )}
+                
               </div>
             </motion.div>
           ))}
         </div>
       </Section>
 
-      {/* Capstone & Deliverables */}
+      
+      {/* Capstone & Deliverables Hidden by Request
+      
       <Section className="bg-gradient-to-br from-[#0A1628] to-[#1a2d42] text-white relative overflow-hidden">
-        {/* Decor */}
+        {/* Decor * /}
         <div className="absolute top-0 right-0 w-full h-full overflow-hidden pointer-events-none">
           <div className="absolute top-1/2 left-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] transform -translate-x-1/2 -translate-y-1/2" />
         </div>
@@ -296,7 +291,7 @@ const DataEngineering = () => {
               Build a Complete Data Platform
             </motion.h2>
             <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="font-body text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
-              Students design and build a production-grade data platform — demonstrating mastery of the full data engineering stack. This becomes your most powerful portfolio piece when entering the job market.
+              Students design and build a production-grade data platform - demonstrating mastery of the full data engineering stack. This becomes your most powerful portfolio piece when entering the job market.
             </motion.p>
           </div>
 
@@ -327,7 +322,7 @@ const DataEngineering = () => {
             </div>
           </div>
         </div>
-      </Section>
+      </Section> */}
 
       {/* Tools & Technologies */}
       <Section className="bg-white">
@@ -376,12 +371,12 @@ const DataEngineering = () => {
         <SectionHeader
           label="What You'll Be Able to Do"
           title="Program Outcomes"
-          subtitle="Graduates leave with demonstrable engineering skills — not just theoretical knowledge, but deployed, production-grade systems they built themselves."
+          subtitle="Graduates leave with demonstrable engineering skills - not just theoretical knowledge, but deployed, production-grade systems they built themselves."
         />
 
         <div className="max-w-6xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 gap-10 lg:gap-16">
           {[
-            { n: "01", t: "Design Data Pipelines", d: "Architect and build robust ETL/ELT pipelines that move and transform data reliably at scale — from ingestion to analytical layers." },
+            { n: "01", t: "Design Data Pipelines", d: "Architect and build robust ETL/ELT pipelines that move and transform data reliably at scale - from ingestion to analytical layers." },
             { n: "02", t: "Operate Distributed Systems", d: "Work confidently with Apache Spark and Kafka to process large-scale datasets and build real-time data streaming pipelines." },
             { n: "03", t: "Deploy to Cloud", d: "Package and ship data platforms to AWS and Google Cloud using modern cloud-native architecture and DevOps practices." },
             { n: "04", t: "Work in Real Teams", d: "Collaborate using Git, communicate technical decisions clearly, and contribute effectively in professional engineering environments." }
@@ -408,14 +403,14 @@ const DataEngineering = () => {
       <Section className="bg-[#34495E] text-white overflow-hidden relative border-t-8 border-primary">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-center">
           <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="md:w-1/2">
-            <span className="inline-block font-accent text-sm font-semibold tracking-widest text-[#A8D8EA] bg-[#A8D8EA]/10 px-4 py-2 rounded-full uppercase mb-6">
-              Every Saturday
-            </span>
+            
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
               Complementary Professional Skills
             </h2>
             <p className="font-body text-xl text-slate-300 leading-relaxed mb-8">
-              Technical ability gets you interviews. Professional readiness gets you hired. Every Saturday throughout the program, students participate in career development sessions.
+              Technical ability gets you interviews.<br />
+              Professional readiness gets you hired.<br />
+              Every Saturday throughout the program, students participate in career development sessions.
             </p>
           </motion.div>
 

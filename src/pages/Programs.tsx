@@ -56,15 +56,12 @@ const Programs = () => {
             className="max-w-4xl mx-auto text-center"
           >
             <h1 className="font-heading text-[1.7rem] sm:text-3xl md:text-4xl lg:text-[2.8rem] font-bold tracking-tight mb-3 md:mb-4">
-              <span className="text-black">Two Programs</span> <span className="text-[#FF5757]">One Mission</span>
+              <span className="text-black">Two Programs.</span> <span className="text-[#FF5757]">One Mission</span>
             </h1>
-            <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed mb-5 md:mb-6">
-              Intensive 6-month engineering tracks built around the skills that technology companies actually hire for. Choose the path that aligns with your career goals.
+            <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed text-justify mb-5 md:mb-6">
+              Intensive 6-month engineering tracks built around the skills that technology companies actually hire for.<br className="hidden md:block" />
+              Choose the path that aligns with your career goals.
             </p>
-            <Button variant="cta" size="xl" onClick={openModal}>
-              Request Callback
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
           </motion.div>
         </div>
       </section>
@@ -86,13 +83,10 @@ const Programs = () => {
             >
               {/* Top Section */}
               <div className="bg-[#34495E] text-white p-8 md:p-10">
-                <span className="inline-block font-accent text-xs font-semibold tracking-wider uppercase opacity-80 mb-3">
-                  Program 01
-                </span>
                 <h3 className="font-heading text-3xl font-bold mb-4 text-white">
                   Data Engineering
                 </h3>
-                <p className="font-body text-sm md:text-base opacity-90 leading-relaxed mb-6 text-white">
+                <p className="font-body text-sm md:text-base opacity-90 leading-relaxed text-justify mb-6 text-white">
                   Build modern data platforms, pipelines, and analytics infrastructure used by leading tech companies.
                 </p>
                 <div className="flex flex-wrap gap-3 mt-2">
@@ -133,35 +127,35 @@ const Programs = () => {
                     <span className="font-heading font-bold text-[#34495E] text-lg">01</span>
                     <div>
                       <h4 className="font-heading font-semibold text-foreground mb-1">Engineering Foundations</h4>
-                      <p className="font-body text-sm text-muted-foreground leading-relaxed">Linux, shell scripting, Git, Python, and SQL — the core toolkit every data engineer needs to work in real codebases.</p>
+                      <p className="font-body text-sm text-muted-foreground leading-relaxed text-justify">Linux, shell scripting, Git, Python, and SQL - the core toolkit every data engineer needs to work in real codebases.</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <span className="font-heading font-bold text-[#34495E] text-lg">02</span>
                     <div>
                       <h4 className="font-heading font-semibold text-foreground mb-1">Data Modeling & Pipelines</h4>
-                      <p className="font-body text-sm text-muted-foreground leading-relaxed">ETL/ELT design, dimensional modeling, data quality validation, and building end-to-end analytical pipelines from raw source data.</p>
+                      <p className="font-body text-sm text-muted-foreground leading-relaxed text-justify">ETL/ELT design, dimensional modeling, data quality validation, and building end-to-end analytical pipelines from raw source data.</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <span className="font-heading font-bold text-[#34495E] text-lg">03</span>
                     <div>
                       <h4 className="font-heading font-semibold text-foreground mb-1">Distributed Systems & Streaming</h4>
-                      <p className="font-body text-sm text-muted-foreground leading-relaxed">Apache Spark for large-scale batch processing and Apache Kafka for real-time event streaming and pipeline design.</p>
+                      <p className="font-body text-sm text-muted-foreground leading-relaxed text-justify">Apache Spark for large-scale batch processing and Apache Kafka for real-time event streaming and pipeline design.</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <span className="font-heading font-bold text-[#34495E] text-lg">04</span>
                     <div>
                       <h4 className="font-heading font-semibold text-foreground mb-1">Cloud, Orchestration & Analytics Engineering</h4>
-                      <p className="font-body text-sm text-muted-foreground leading-relaxed">AWS & GCP cloud platforms, data lake architecture, Apache Airflow for orchestration, and dbt for transformation layers.</p>
+                      <p className="font-body text-sm text-muted-foreground leading-relaxed text-justify">AWS & GCP cloud platforms, data lake architecture, Apache Airflow for orchestration, and dbt for transformation layers.</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <span className="font-heading font-bold text-[#34495E] text-lg">05</span>
                     <div>
                       <h4 className="font-heading font-semibold text-foreground mb-1">System Design, BI & Production</h4>
-                      <p className="font-body text-sm text-muted-foreground leading-relaxed">Business metrics, Power BI & Tableau dashboards, data platform architecture, security, compliance, and a full capstone project.</p>
+                      <p className="font-body text-sm text-muted-foreground leading-relaxed text-justify">Business metrics, Power BI & Tableau dashboards, data platform architecture, security, compliance, and a full capstone project.</p>
                     </div>
                   </div>
                 </div>
@@ -185,13 +179,10 @@ const Programs = () => {
             >
               {/* Top Section */}
               <div className="bg-primary text-primary-foreground p-8 md:p-10">
-                <span className="inline-block font-accent text-xs font-semibold tracking-wider uppercase opacity-80 mb-3">
-                  Program 02
-                </span>
                 <h3 className="font-heading text-3xl font-bold mb-4">
                   AI / ML Engineering
                 </h3>
-                <p className="font-body text-sm md:text-base opacity-90 leading-relaxed mb-6">
+                <p className="font-body text-sm md:text-base opacity-90 leading-relaxed text-justify mb-6">
                   Design and deploy production-ready machine learning and artificial intelligence systems end to end.
                 </p>
                 <div className="flex flex-wrap gap-3 mt-2">
@@ -216,9 +207,9 @@ const Programs = () => {
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" className="h-9 w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Python" />
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" className="h-9 w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="TensorFlow" />
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" alt="PyTorch" className="h-9 w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="PyTorch" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" className="h-9 w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="React" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" className="h-9 w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Node.js" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" className="h-9 w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="JavaScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="Pandas" className="h-9 w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Pandas" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" className="h-9 w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Docker" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" className="h-9 w-auto hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="AWS" />
                 </div>
               </div>
 
@@ -232,35 +223,35 @@ const Programs = () => {
                     <span className="font-heading font-bold text-primary text-lg">01</span>
                     <div>
                       <h4 className="font-heading font-semibold text-foreground mb-1">Python, Data & ML Fundamentals</h4>
-                      <p className="font-body text-sm text-muted-foreground leading-relaxed">Advanced Python, NumPy, Pandas, feature engineering, and core ML models — regression, classification, and clustering with scikit-learn.</p>
+                      <p className="font-body text-sm text-muted-foreground leading-relaxed text-justify">Advanced Python, NumPy, Pandas, feature engineering, and core ML models - regression, classification, and clustering with scikit-learn.</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <span className="font-heading font-bold text-primary text-lg">02</span>
                     <div>
                       <h4 className="font-heading font-semibold text-foreground mb-1">Deep Learning</h4>
-                      <p className="font-body text-sm text-muted-foreground leading-relaxed">Neural networks, CNNs for image data, RNNs and LSTMs for sequences, and transfer learning with TensorFlow and PyTorch.</p>
+                      <p className="font-body text-sm text-muted-foreground leading-relaxed text-justify">Neural networks, CNNs for image data, RNNs and LSTMs for sequences, and transfer learning with TensorFlow and PyTorch.</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <span className="font-heading font-bold text-primary text-lg">03</span>
                     <div>
                       <h4 className="font-heading font-semibold text-foreground mb-1">MLOps & Production Deployment</h4>
-                      <p className="font-body text-sm text-muted-foreground leading-relaxed">Package, deploy, and monitor ML models as live production APIs — with CI/CD automation and model drift detection.</p>
+                      <p className="font-body text-sm text-muted-foreground leading-relaxed text-justify">Package, deploy, and monitor ML models as live production APIs - with CI/CD automation and model drift detection.</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <span className="font-heading font-bold text-primary text-lg">04</span>
                     <div>
                       <h4 className="font-heading font-semibold text-foreground mb-1">Applied AI Systems</h4>
-                      <p className="font-body text-sm text-muted-foreground leading-relaxed">NLP pipelines, recommendation engines, computer vision applications, and LLM-based tools with prompt engineering for real users.</p>
+                      <p className="font-body text-sm text-muted-foreground leading-relaxed text-justify">NLP pipelines, recommendation engines, computer vision applications, and LLM-based tools with prompt engineering for real users.</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <span className="font-heading font-bold text-primary text-lg">05</span>
                     <div>
                       <h4 className="font-heading font-semibold text-foreground mb-1">ML System Design & Capstone</h4>
-                      <p className="font-body text-sm text-muted-foreground leading-relaxed">Inference architecture, model scaling, feature stores, and a complete end-to-end AI system as a production-ready portfolio project.</p>
+                      <p className="font-body text-sm text-muted-foreground leading-relaxed text-justify">Inference architecture, model scaling, feature stores, and a complete end-to-end AI system as a production-ready portfolio project.</p>
                     </div>
                   </div>
                 </div>

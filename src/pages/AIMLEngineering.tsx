@@ -77,7 +77,7 @@ const AIMLEngineering = () => {
             </motion.h1>
             
             <motion.p variants={fadeIn} className="font-body text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl mb-10">
-              Design, train, and deploy production-ready AI systems — going far beyond notebook experimentation into real engineering workflows that deliver models to users at scale.
+              Design, train, and deploy production-ready AI systems - going far beyond notebook experimentation into real engineering workflows that deliver models to users at scale.
             </motion.p>
             
             <motion.div variants={fadeIn} className="flex flex-wrap gap-4 mb-10">
@@ -87,7 +87,7 @@ const AIMLEngineering = () => {
               </div>
               <div className="px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center">
                 <Users className="w-4 h-4 mr-2 text-primary" />
-                Classroom / Hybrid
+                Classroom
               </div>
               <div className="px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center">
                 <BrainCircuit className="w-4 h-4 mr-2 text-primary" />
@@ -99,9 +99,7 @@ const AIMLEngineering = () => {
               </div>
             </motion.div>
 
-            <motion.span variants={fadeIn} className="inline-block font-accent text-sm md:text-base font-semibold tracking-widest text-[#FF5757] uppercase opacity-90 mt-4 border-t border-white/10 pt-6 w-full max-w-lg">
-              Vidyavya Advanced Engineering Career Programs
-            </motion.span>
+            
           </motion.div>
         </div>
       </section>
@@ -123,7 +121,7 @@ const AIMLEngineering = () => {
               From Model Notebooks to Production AI
             </h2>
             <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              The Vidyavya AI/ML Engineering Career Program is a 6-month intensive built around the full lifecycle of machine learning — from data preparation and model training to cloud deployment and production monitoring. Students graduate having deployed real AI systems, making them genuinely job-ready in one of the highest-demand fields in technology.
+              The Vidyavya AI/ML Engineering Career Program is a 6-month intensive built around the full lifecycle of machine learning - from data preparation and model training to cloud deployment and production monitoring. Students graduate having deployed real AI systems, making them genuinely job-ready in one of the highest-demand fields in technology.
             </p>
           </motion.div>
         </div>
@@ -146,7 +144,7 @@ const AIMLEngineering = () => {
               { icon: BrainCircuit, title: "End-to-End ML Systems", desc: "Build complete pipelines from raw data to production inference endpoints.", bg: "bg-slate-50 border-slate-100" },
               { icon: Rocket, title: "MLOps & Deployment", desc: "Package, deploy, and maintain ML models as reliable production APIs.", bg: "bg-slate-50 border-slate-100" },
               { icon: Microscope, title: "Deep Learning Mastery", desc: "CNNs, RNNs, Transformers, and transfer learning from real frameworks.", bg: "bg-slate-50 border-slate-100" },
-              { icon: Crosshair, title: "Applied AI Systems", desc: "NLP, computer vision, LLMs, and recommendation engines — built for users.", bg: "bg-slate-50 border-slate-100" }
+              { icon: Crosshair, title: "Applied AI Systems", desc: "NLP, computer vision, LLMs, and recommendation engines - built for users.", bg: "bg-slate-50 border-slate-100" }
             ].map((item, idx) => (
               <motion.div 
                 key={idx}
@@ -172,7 +170,7 @@ const AIMLEngineering = () => {
         <SectionHeader 
           label="Curriculum"
           title="Six Months. Six Engineering Milestones."
-          subtitle="Each month builds systematically — from Python and data mastery to building and shipping complete AI systems at scale."
+          subtitle="Each month builds systematically - from Python and data mastery to building and shipping complete AI systems at scale."
         />
         
         <div className="max-w-5xl mx-auto space-y-6 mt-16 md:mt-24">
@@ -206,7 +204,7 @@ const AIMLEngineering = () => {
               title: "Deep Learning",
               topics: [
                 "Neural network architecture & backpropagation",
-                "CNNs — feature extraction, pooling & image classification",
+                "CNNs - feature extraction, pooling & image classification",
                 "RNNs & LSTMs for sequential & time-series data",
                 "Transfer learning from TensorFlow Hub & PyTorch",
                 "Training loops from scratch to production"
@@ -222,15 +220,15 @@ const AIMLEngineering = () => {
                 "Monitor models in production for drift and failures",
                 "Maintain and retrain deployed models"
               ],
-              project: "Month 4 Milestone\nStudents deploy at least one live, callable production API — a portfolio milestone that significantly strengthens job applications."
+              project: "Month 4 Milestone\nStudents deploy at least one live, callable production API - a portfolio milestone that significantly strengthens job applications."
             },
             {
               month: "Month 5",
               title: "Applied AI Systems",
               topics: [
-                "NLP pipelines — tokenization, embeddings & text workflows",
-                "Recommendation systems — collaborative & content-based filtering",
-                "Computer vision — object detection & pretrained vision models",
+                "NLP pipelines - tokenization, embeddings & text workflows",
+                "Recommendation systems - collaborative & content-based filtering",
+                "Computer vision - object detection & pretrained vision models",
                 "LLMs & prompt engineering for production AI applications",
                 "Personalization engines like those used by streaming platforms"
               ]
@@ -241,7 +239,7 @@ const AIMLEngineering = () => {
               topics: [
                 "End-to-end ML pipeline architecture",
                 "Inference system design patterns",
-                "Model scaling — vertical & horizontal strategies",
+                "Model scaling - vertical & horizontal strategies",
                 "Latency vs. throughput trade-offs",
                 "Feature stores and model registries"
               ]
@@ -256,7 +254,7 @@ const AIMLEngineering = () => {
               className="group flex flex-col md:flex-row bg-white rounded-3xl border border-border/60 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all duration-300"
             >
               <div className="bg-primary text-white p-8 md:p-10 md:w-1/3 shrink-0 flex flex-col justify-center relative overflow-hidden">
-                <span className="font-accent text-sm font-semibold tracking-widest uppercase text-white/80 mb-3 relative z-10">{item.month}</span>
+                
                 <h3 className="font-heading text-2xl md:text-3xl font-bold leading-snug relative z-10">{item.title}</h3>
                 
                 {/* Abstract shape */}
@@ -271,12 +269,7 @@ const AIMLEngineering = () => {
                     </li>
                   ))}
                 </ul>
-                {item.project && (
-                  <div className="bg-slate-50 border border-slate-200/60 p-6 rounded-2xl mt-8">
-                    <span className="block font-heading font-bold text-sm uppercase tracking-widest text-primary mb-2">{item.project.split('\n')[0]}</span>
-                    <p className="font-body text-sm font-medium text-foreground/80 leading-relaxed">{item.project.split('\n')[1]}</p>
-                  </div>
-                )}
+                
               </div>
             </motion.div>
           ))}
@@ -288,8 +281,8 @@ const AIMLEngineering = () => {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
             { icon: "🧬", title: "Neural Networks", p: "Architecture fundamentals, backpropagation, activation functions, and training loops built from scratch." },
-            { icon: "📷", title: "CNNs", p: "Convolutional Neural Networks for image data — feature extraction, pooling, and classification pipelines." },
-            { icon: "🔄", title: "RNNs & LSTMs", p: "Recurrent architectures for sequential data — time series, text, and memory-aware modeling." },
+            { icon: "📷", title: "CNNs", p: "Convolutional Neural Networks for image data - feature extraction, pooling, and classification pipelines." },
+            { icon: "🔄", title: "RNNs & LSTMs", p: "Recurrent architectures for sequential data - time series, text, and memory-aware modeling." },
             { icon: "⚡", title: "Transfer Learning", p: "Leverage pretrained models from TensorFlow Hub and PyTorch to accelerate development on new tasks." }
           ].map((item, idx) => (
             <motion.div 
@@ -309,9 +302,11 @@ const AIMLEngineering = () => {
         </div>
       </section>
 
-      {/* Capstone & Deliverables */}
+      
+      {/* Capstone & Deliverables Hidden by Request
+      
       <Section className="bg-gradient-to-br from-[#0F0A1A] to-[#1A050B] text-white relative overflow-hidden">
-        {/* Decor */}
+        {/* Decor * /}
         <div className="absolute top-0 right-0 w-full h-full overflow-hidden pointer-events-none">
           <div className="absolute top-1/2 left-1/2 w-[800px] h-[800px] bg-primary/20 rounded-full blur-[120px] transform -translate-x-1/2 -translate-y-1/2" />
         </div>
@@ -325,7 +320,7 @@ const AIMLEngineering = () => {
               Design & Build a Complete AI System
             </motion.h2>
             <motion.p initial={{opacity:0, y:20}} whileInView={{opacity:1, y:0}} viewport={{once:true}} className="font-body text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
-              Students design and build a complete end-to-end AI system — a polished, portfolio-ready deliverable that demonstrates the full ML engineering stack, from raw data to monitored production deployment.
+              Students design and build a complete end-to-end AI system - a polished, portfolio-ready deliverable that demonstrates the full ML engineering stack, from raw data to monitored production deployment.
             </motion.p>
           </div>
 
@@ -356,7 +351,7 @@ const AIMLEngineering = () => {
             </div>
           </div>
         </div>
-      </Section>
+      </Section> */}
 
       {/* Tools & Technologies */}
       <Section className="bg-white">
@@ -405,7 +400,7 @@ const AIMLEngineering = () => {
         <SectionHeader 
           label="What You'll Be Able to Do"
           title="Program Outcomes"
-          subtitle="Graduates leave with demonstrated, deployable AI/ML engineering ability — not just theoretical knowledge, but live systems they shipped."
+          subtitle="Graduates leave with demonstrated, deployable AI/ML engineering ability - not just theoretical knowledge, but live systems they shipped."
         />
         
         <div className="max-w-6xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 gap-10 lg:gap-16">
@@ -437,14 +432,14 @@ const AIMLEngineering = () => {
       <Section className="bg-[#0F0A1A] text-white overflow-hidden relative border-t-8 border-primary">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-center">
           <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once:true }} className="md:w-1/2">
-            <span className="inline-block font-accent text-sm font-semibold tracking-widest text-primary bg-primary/10 px-4 py-2 rounded-full uppercase mb-6">
-              Every Saturday
-            </span>
+            
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
               Complementary Professional Skills
             </h2>
             <p className="font-body text-xl text-slate-300 leading-relaxed mb-8">
-              Technical ability gets you interviews. Professional readiness gets you hired. Every Saturday throughout the program, students participate in structured career development sessions.
+              Technical ability gets you interviews.<br />
+              Professional readiness gets you hired.<br />
+              Every Saturday throughout the program, students participate in structured career development sessions.
             </p>
           </motion.div>
           
