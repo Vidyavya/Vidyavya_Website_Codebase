@@ -410,7 +410,7 @@ const DataEngineering = () => {
             <p className="font-body text-xl text-slate-300 leading-relaxed mb-8">
               Technical ability gets you interviews.<br />
               Professional readiness gets you hired.<br />
-              Every Saturday throughout the program, students participate in career development sessions.
+              Throughout the program, students participate in career development sessions.
             </p>
           </motion.div>
 
