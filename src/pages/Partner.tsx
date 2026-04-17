@@ -89,7 +89,7 @@ const Partner = () => {
       />
       <div className="w-full overflow-hidden">
       {/* Hero */}
-      <section className="pt-10 pb-8 md:pt-20 md:pb-12 bg-gradient-to-b from-cream to-background">
+      <section className="pt-10 pb-6 md:pt-20 md:pb-8 bg-gradient-to-b from-cream to-background">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -108,7 +108,7 @@ const Partner = () => {
       </section>
 
       {/* For Companies */}
-      <Section className="py-12 md:py-24">
+      <Section className="pt-8 pb-12 md:pt-16 md:pb-24">
         <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-stretch">
           <motion.div
             initial={{ opacity: 0, x: -20 }}

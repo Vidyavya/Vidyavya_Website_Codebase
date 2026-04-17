@@ -51,7 +51,7 @@ const About = () => {
         url="https://www.vidyavya.com/about"
       />
       {/* Hero */}
-      <section className="pt-12 pb-16 md:pt-20 md:pb-24 bg-gradient-to-b from-cream to-background">
+      <section className="pt-12 pb-11 md:pt-20 md:pb-16 bg-gradient-to-b from-cream to-background">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -70,7 +70,7 @@ const About = () => {
       </section>
 
       {/* Our Story */}
-      <Section className="py-8 md:py-12">
+      <Section className="pt-6 pb-8 md:pt-8 md:pb-12">
         <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           <div>
             <SectionHeader
@@ -96,25 +96,33 @@ const About = () => {
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full" />
               <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-accent/50 rounded-full" />
               <div className="relative space-y-6">
-                <div>
-                  <div className="flex items-center gap-3 mb-2">
-                    <Eye className="w-6 h-6 text-secondary-foreground shrink-0" />
-                    <h4 className="font-heading font-bold text-xl">Our Vision</h4>
+                <div className="flex gap-4 items-start">
+                  <Eye className="w-6 h-6 text-secondary-foreground shrink-0 mt-1" />
+                  <div>
+                    <div className="mb-1.5">
+                      <h4 className="font-heading font-bold text-lg inline mr-1">Our Vision</h4>
+                      <span className="font-bold text-[0.8rem] text-secondary-foreground/90 inline align-baseline">
+                        - To Build the Future of Tech, One Engineer at a Time
+                      </span>
+                    </div>
+                    <p className="font-body text-[0.82rem] text-secondary-foreground/80 leading-relaxed">
+                      We empower motivated learners through practical experience and aim to become India’s leading career accelerator for Data and AI, creating engineers who drive the next wave of technological innovation.
+                    </p>
                   </div>
-                  <p className="font-body text-sm text-secondary-foreground/80">
-                    <span className="block font-bold mb-1">To Build the Future of Tech, One Engineer at a Time</span>
-                    We empower motivated learners through practical experience and aim to become India’s leading career accelerator for Data and AI, creating engineers who drive the next wave of technological innovation.
-                  </p>
                 </div>
-                <div>
-                  <div className="flex items-center gap-3 mb-2">
-                    <Target className="w-6 h-6 text-secondary-foreground shrink-0" />
-                    <h4 className="font-heading font-bold text-xl">Our Mission</h4>
+                <div className="flex gap-4 items-start">
+                  <Target className="w-6 h-6 text-secondary-foreground shrink-0 mt-1" />
+                  <div>
+                    <div className="mb-1.5">
+                      <h4 className="font-heading font-bold text-lg inline mr-1">Our Mission</h4>
+                      <span className="font-bold text-[0.8rem] text-secondary-foreground/90 inline align-baseline">
+                        - To Turn Learners into Leaders
+                      </span>
+                    </div>
+                    <p className="font-body text-[0.82rem] text-secondary-foreground/80 leading-relaxed">
+                      We train students in Data Engineering and AI/ML through a work-integrated model where they learn from industry professionals, work on real projects, and graduate confident for modern tech roles.
+                    </p>
                   </div>
-                  <p className="font-body text-sm text-secondary-foreground/80">
-                    <span className="block font-bold mb-1">To Turn Learners into Leaders</span>
-                    We train students in Data Engineering and AI/ML through a work-integrated model where they learn from industry professionals, work on real projects, and graduate confident for modern tech roles.
-                  </p>
                 </div>
               </div>
             </div>
