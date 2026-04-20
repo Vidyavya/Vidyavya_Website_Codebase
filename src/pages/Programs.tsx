@@ -47,7 +47,7 @@ const Programs = () => {
         url="https://www.vidyavya.com/programs"
       />
       {/* Hero */}
-      <section className="pt-12 pb-8 md:pt-20 md:pb-12 bg-gradient-to-b from-cream to-background">
+      <section className="pt-12 pb-11 md:pt-20 md:pb-16 bg-gradient-to-b from-cream to-background">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -55,14 +55,14 @@ const Programs = () => {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h1 className="font-heading text-[1.7rem] sm:text-3xl md:text-4xl lg:text-[2.8rem] font-bold tracking-tight mb-3 md:mb-4">
+            <h1 className="font-heading text-[1.7rem] md:text-4xl lg:text-[2.8rem] font-bold text-foreground mb-4">
               <span className="text-black">Two Programs.</span> <span className="text-[#FF5757]">One Mission</span>
             </h1>
-            <div className="space-y-4 mb-5 md:mb-6">
-              <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed text-center mx-auto max-w-2xl">
+            <div className="space-y-4 mb-6">
+              <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed">
                 Intensive 6-month engineering tracks built around the skills that technology companies actually hire for.
               </p>
-              <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed text-center mx-auto max-w-2xl">
+              <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed">
                 Choose the path that aligns with your career goals.
               </p>
             </div>

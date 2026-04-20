@@ -89,18 +89,18 @@ const Partner = () => {
       />
       <div className="w-full overflow-hidden">
       {/* Hero */}
-      <section className="pt-10 pb-6 md:pt-20 md:pb-8 bg-gradient-to-b from-cream to-background">
+      <section className="pt-12 pb-11 md:pt-20 md:pb-16 bg-gradient-to-b from-cream to-background">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="max-w-5xl mx-auto text-center px-2 md:px-0"
+            className="max-w-4xl mx-auto text-center"
           >
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-[2.8rem] font-bold text-foreground mb-4 md:mb-6 leading-tight">
+            <h1 className="font-heading text-[1.7rem] md:text-4xl lg:text-[2.8rem] font-bold text-foreground mb-4">
               Building the <span className="text-primary">Future, Together</span>
             </h1>
-            <p className="font-body text-[15px] md:text-xl text-muted-foreground leading-relaxed lg:whitespace-nowrap">
+            <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
               We partner with companies and colleges committed to developing skilled, job-ready tech talent.
             </p>
           </motion.div>

@@ -11,7 +11,7 @@ const TermsOfService = () => {
                     </Button>
                 </div>
 
-                <h1 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-8">
+                <h1 className="font-heading text-[1.7rem] md:text-4xl lg:text-[2.8rem] font-bold text-foreground mb-8">
                     Vidyavya Terms of Service
                 </h1>
 
