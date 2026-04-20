@@ -120,7 +120,7 @@ const AIMLEngineering = () => {
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6">
               From Model Notebooks to Production AI
             </h2>
-            <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+            <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto text-center text-balance">
               The Vidyavya AI/ML Engineering Career Program is a 6-month intensive built around the full lifecycle of machine learning - from data preparation and model training to cloud deployment and production monitoring. Students graduate having deployed real AI systems, making them genuinely job-ready in one of the highest-demand fields in technology.
             </p>
           </motion.div>
@@ -171,6 +171,7 @@ const AIMLEngineering = () => {
           label="Curriculum"
           title="Six Months. Six Engineering Milestones."
           subtitle="Each month builds systematically - from Python and data mastery to building and shipping complete AI systems at scale."
+          subtitleClassName="text-center text-balance"
         />
         
         <div className="max-w-5xl mx-auto space-y-6 mt-16 md:mt-24">

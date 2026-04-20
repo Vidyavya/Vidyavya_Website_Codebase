@@ -6,6 +6,7 @@ interface SectionHeaderProps {
   label?: string;
   align?: 'left' | 'center';
   className?: string;
+  subtitleClassName?: string;
 }
 
 const SectionHeader = ({
@@ -14,6 +15,7 @@ const SectionHeader = ({
   label,
   align = 'center',
   className,
+  subtitleClassName,
 }: SectionHeaderProps) => {
   return (
     <div
@@ -32,7 +34,7 @@ const SectionHeader = ({
         {title}
       </h2>
       {subtitle && (
-        <p className="font-body text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
+        <p className={cn("font-body text-lg text-muted-foreground max-w-3xl mx-auto text-balance", subtitleClassName)}>
           {subtitle}
         </p>
       )}

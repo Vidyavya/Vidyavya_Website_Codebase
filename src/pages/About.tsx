@@ -99,11 +99,11 @@ const About = () => {
                 <div className="flex gap-4 items-start">
                   <Eye className="w-6 h-6 text-secondary-foreground shrink-0 mt-1" />
                   <div>
-                    <div className="mb-1.5">
-                      <h4 className="font-heading font-bold text-lg inline mr-1">Our Vision</h4>
-                      <span className="font-bold text-[0.8rem] text-secondary-foreground/90 inline align-baseline">
-                        - To Build the Future of Tech, One Engineer at a Time
-                      </span>
+                    <div className="mb-3">
+                      <h4 className="font-heading font-bold text-lg text-secondary-foreground">Our Vision</h4>
+                      <div className="font-body font-medium text-[0.85rem] text-secondary-foreground/90 leading-snug">
+                        To Build the Future of Tech, One Engineer at a Time
+                      </div>
                     </div>
                     <p className="font-body text-[0.82rem] text-secondary-foreground/80 leading-relaxed">
                       We empower motivated learners through practical experience and aim to become India’s leading career accelerator for Data and AI, creating engineers who drive the next wave of technological innovation.
@@ -113,11 +113,11 @@ const About = () => {
                 <div className="flex gap-4 items-start">
                   <Target className="w-6 h-6 text-secondary-foreground shrink-0 mt-1" />
                   <div>
-                    <div className="mb-1.5">
-                      <h4 className="font-heading font-bold text-lg inline mr-1">Our Mission</h4>
-                      <span className="font-bold text-[0.8rem] text-secondary-foreground/90 inline align-baseline">
-                        - To Turn Learners into Leaders
-                      </span>
+                    <div className="mb-3">
+                      <h4 className="font-heading font-bold text-lg text-secondary-foreground">Our Mission</h4>
+                      <div className="font-body font-medium text-[0.85rem] text-secondary-foreground/90 leading-snug">
+                        To Turn Learners into Leaders
+                      </div>
                     </div>
                     <p className="font-body text-[0.82rem] text-secondary-foreground/80 leading-relaxed">
                       We train students in Data Engineering and AI/ML through a work-integrated model where they learn from industry professionals, work on real projects, and graduate confident for modern tech roles.

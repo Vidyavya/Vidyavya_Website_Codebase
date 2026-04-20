@@ -116,7 +116,7 @@ const DataEngineering = () => {
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6">
               From Raw Data to Production Pipelines
             </h2>
-            <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+            <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto text-center text-balance">
               The Vidyavya Data Engineering Career Program is a 6-month intensive designed around how data engineers actually work in production environments. Every week combines real engineering concepts with hands-on projects that mirror the systems running at leading technology companies. You'll graduate with a portfolio, technical depth, and interview-ready confidence.
             </p>
           </motion.div>
@@ -167,6 +167,7 @@ const DataEngineering = () => {
           label="Curriculum"
           title="Six Months. Six Engineering Milestones."
           subtitle="Each month builds on the last - starting with engineering foundations and culminating in a production-grade capstone that demonstrates full-stack data platform skills."
+          subtitleClassName="text-center text-balance"
         />
 
         <div className="max-w-5xl mx-auto space-y-6 mt-16 md:mt-24">

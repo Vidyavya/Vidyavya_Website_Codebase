@@ -286,7 +286,8 @@ const RequestCallbackModal = () => {
                                     Thank You!
                                 </h3>
                                 <p className="text-muted-foreground font-body max-w-[300px] mx-auto">
-                                    Request submitted! We will call you back shortly.
+                                    Request submitted!<br />
+                                    We will call you back shortly.
                                 </p>
                             </div>
                             <Button 

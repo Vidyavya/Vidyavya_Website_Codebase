@@ -58,10 +58,14 @@ const Programs = () => {
             <h1 className="font-heading text-[1.7rem] sm:text-3xl md:text-4xl lg:text-[2.8rem] font-bold tracking-tight mb-3 md:mb-4">
               <span className="text-black">Two Programs.</span> <span className="text-[#FF5757]">One Mission</span>
             </h1>
-            <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed text-center mx-auto mb-5 md:mb-6 max-w-2xl">
-              Intensive 6-month engineering tracks built around the skills that technology companies actually hire for.<br className="hidden md:block" />
-              Choose the path that aligns with your career goals.
-            </p>
+            <div className="space-y-4 mb-5 md:mb-6">
+              <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed text-center mx-auto max-w-2xl">
+                Intensive 6-month engineering tracks built around the skills that technology companies actually hire for.
+              </p>
+              <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed text-center mx-auto max-w-2xl">
+                Choose the path that aligns with your career goals.
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>

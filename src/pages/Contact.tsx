@@ -103,9 +103,10 @@ const Contact = () => {
             <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
               <CheckCircle className="w-10 h-10 text-green-600" />
             </div>
-            <h2 className="text-3xl font-heading font-semibold text-foreground mb-4">Message Received!</h2>
+            <h2 className="text-3xl font-heading font-semibold text-foreground mb-4">Thank You!</h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Thank you for reaching out. Our team has received your message and will get back to you shortly.
+              Thank you for reaching out.<br />
+              Our team has received your message and will get back to you shortly.
             </p>
             <Button variant="cta" onClick={() => setIsSubmitted(false)} className="w-full">
               Submit Another Message

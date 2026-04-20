@@ -140,7 +140,8 @@ const PartnerForm = ({ open, onOpenChange }: PartnerFormProps) => {
                             </div>
                             <h3 className="text-xl font-heading font-semibold text-foreground mb-2">Thank You!</h3>
                             <p className="text-muted-foreground">
-                                We've received your details. Our team will get back to you shortly.
+                                We've received your details.<br />
+                                Our team will get back to you shortly.
                             </p>
                         </motion.div>
                     ) : (
