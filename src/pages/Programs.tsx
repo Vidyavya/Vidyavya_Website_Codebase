@@ -111,13 +111,14 @@ const Programs = () => {
                 <span className="inline-block font-accent text-[10px] font-semibold tracking-widest text-muted-foreground uppercase mb-4">
                   Core Technologies
                 </span>
-                <div className="flex gap-6 overflow-x-auto pb-2 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] items-center justify-start pr-8">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" className="h-9 w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Python" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="SQL" className="h-9 w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="SQL" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" alt="Spark" className="h-9 w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Spark" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" className="h-9 w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Java" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" className="h-9 w-auto hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="AWS" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" className="h-9 w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Docker" />
+                <div className="flex flex-nowrap gap-4 md:gap-[16px] items-center justify-center mt-2 pb-2">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Python" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="PostgreSQL" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" alt="Apache Spark" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Apache Spark" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" alt="Apache Kafka" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Apache Kafka" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" alt="Apache Airflow" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Apache Airflow" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" className="h-8 md:h-9 w-auto hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Amazon Web Services" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Docker" />
                 </div>
               </div>
 
@@ -207,13 +208,14 @@ const Programs = () => {
                 <span className="inline-block font-accent text-[10px] font-semibold tracking-widest text-muted-foreground uppercase mb-4">
                   Core Technologies
                 </span>
-                <div className="flex gap-6 overflow-x-auto pb-2 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] items-center justify-start pr-8">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" className="h-9 w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Python" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" className="h-9 w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="TensorFlow" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" alt="PyTorch" className="h-9 w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="PyTorch" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="Pandas" className="h-9 w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Pandas" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" className="h-9 w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Docker" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" className="h-9 w-auto hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="AWS" />
+                <div className="flex flex-nowrap gap-4 md:gap-[16px] items-center justify-center mt-2 pb-2">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" alt="NumPy" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="NumPy" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="Pandas" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Pandas" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="scikit-learn" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="scikit-learn" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="TensorFlow" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" alt="PyTorch" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="PyTorch" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" className="h-8 md:h-9 w-auto hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Amazon Web Services" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="GCP" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Google Cloud Platform" />
                 </div>
               </div>
 
