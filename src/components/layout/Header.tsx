@@ -68,7 +68,7 @@ const Header = () => {
           {/* Desktop CTA Buttons */}
           <div className="hidden lg:flex items-center gap-3">
             <Button variant="ghost" size="sm" className="border border-secondary transition-all duration-300 hover:border-primary hover:text-primary hover:scale-105 active:scale-95" asChild>
-              <Link to="/login">Login</Link>
+              <a href="https://student.vidyavya.com">Login</a>
             </Button>
             <Button variant="cta" size="default" onClick={openModal}>
               Request Callback
@@ -113,7 +113,7 @@ const Header = () => {
                 ))}
                 <div className="px-4 pt-4 space-y-3">
                   <Button variant="outline" className="w-full" asChild>
-                    <Link to="/login">Login</Link>
+                    <a href="https://student.vidyavya.com">Login</a>
                   </Button>
                   <Button variant="cta" className="w-full" onClick={openModal}>
                     Request Callback
