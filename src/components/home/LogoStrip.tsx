@@ -1,8 +1,12 @@
 import { useEffect } from 'react';
 
 const LogoStrip = () => {
-  // Generate an array of image paths from 1 to 5
-  const logos = Array.from({ length: 5 }, (_, i) => `/company-logos/${i + 1}.png`);
+  const logos = [
+    '/company-logos/1.png',
+    '/company-logos/meta flow ai logo-edited.png',
+    '/company-logos/yukoso logo-edited.png',
+    '/company-logos/5.png'
+  ];
 
   return (
     <div className="py-4 bg-card border-y border-border overflow-hidden">
@@ -16,11 +20,8 @@ const LogoStrip = () => {
           {/* First set of logos */}
           <div className="flex gap-4 md:gap-8 items-center px-6">
             {logos.map((src, index) => {
-              // Increase size for Logo 2 (index 1) and Logo 4 (index 3) by 6 tailwind steps over the base
-              const isLarger = index === 1 || index === 3;
-              const imgSizeClass = isLarger
-                ? "h-44 md:h-52 w-80 md:w-96" // Scaled up even more
-                : "h-32 md:h-36 w-64 md:w-72"; // Scaled up base
+              // Normalized logo sizing for optical balance
+              const imgSizeClass = "h-32 md:h-36 w-64 md:w-72";
 
               return (
                 <div
@@ -40,11 +41,8 @@ const LogoStrip = () => {
           {/* Duplicate for seamless loop */}
           <div className="flex gap-4 md:gap-8 items-center px-6">
             {logos.map((src, index) => {
-              // Same sizing logic for the duplicate loop
-              const isLarger = index === 1 || index === 3;
-              const imgSizeClass = isLarger
-                ? "h-44 md:h-52 w-80 md:w-96"
-                : "h-32 md:h-36 w-64 md:w-72";
+              // Normalized logo sizing for optical balance
+              const imgSizeClass = "h-32 md:h-36 w-64 md:w-72";
 
               return (
                 <div
