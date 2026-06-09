@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Dialog, DialogPortal, DialogOverlay } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { useRequestCallback } from '@/context/RequestCallbackContext';
-import { Sparkles } from 'lucide-react';
+import { X } from 'lucide-react';
+import * as DialogPrimitive from "@radix-ui/react-dialog";
 
 const PromoPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,46 +35,45 @@ const PromoPopup = () => {
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && handleClose()}>
-      <DialogContent className="sm:max-w-[500px] p-0 overflow-hidden border border-border bg-card shadow-2xl rounded-2xl">
-        {/* Header/Banner Section with Brand Styling */}
-        <div className="relative w-full h-32 flex items-center justify-center border-b border-border bg-gradient-to-b from-cream/60 to-background/40 select-none">
-          {/* Subtle grid pattern and glowing shapes to match Vidyavya's UI */}
-          <div className="absolute inset-0 opacity-[0.08] bg-[radial-gradient(hsl(var(--primary))_1px,transparent_1px)] [background-size:16px_16px]" />
-          <div className="absolute -top-12 -right-12 w-32 h-32 bg-primary/10 rounded-full blur-2xl pointer-events-none" />
-          <div className="absolute -bottom-10 -left-10 w-24 h-24 bg-accent/30 rounded-full blur-xl pointer-events-none" />
-          
-          <div className="relative flex flex-col items-center">
-            {/* Sparkles icon badge */}
-            <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-2 border border-primary/20 shadow-sm animate-pulse">
-              <Sparkles className="w-7 h-7 text-primary" />
-            </div>
-            <span className="font-accent text-[0.7rem] uppercase tracking-[0.2em] font-bold text-primary">
-              Limited Opportunity
-            </span>
-          </div>
-        </div>
+      <DialogPortal>
+        {/* Modern Glass Backdrop Filter (8px - 12px blur) with light tint */}
+        <DialogOverlay className="bg-black/10 backdrop-blur-[10px]" />
+        
+        <DialogPrimitive.Content
+          className="fixed left-[50%] top-[50%] z-50 grid w-[92%] sm:max-w-[720px] translate-x-[-50%] translate-y-[-50%] border border-border/80 bg-background/98 p-8 sm:p-14 shadow-2xl duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] rounded-2xl overflow-hidden"
+        >
+          {/* Close Button in top right */}
+          <DialogPrimitive.Close className="absolute right-4 top-4 rounded-full p-2 opacity-60 transition-opacity hover:opacity-100 focus:outline-none text-foreground hover:bg-muted">
+            <X className="h-5 w-5" />
+            <span className="sr-only">Close</span>
+          </DialogPrimitive.Close>
 
-        {/* Content Section */}
-        <div className="p-6 sm:p-8 flex flex-col items-center text-center space-y-6">
-          <div className="space-y-3">
-            <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground leading-tight">
-              The Industry Is Hiring. <span className="text-primary">Are You Ready?</span>
+          {/* Main Content Layout - No top icons, clean top start */}
+          <div className="flex flex-col items-center text-center space-y-6 sm:space-y-8 pt-4">
+            {/* Headline Section */}
+            <h2 className="font-heading text-3xl sm:text-[48px] font-bold text-center leading-[1.25] tracking-tight">
+              <span className="text-[#34495E] block">The Industry Is Hiring.</span>
+              <span className="text-[#FF5757] block mt-1 sm:mt-3">Are You Ready?</span>
             </h2>
-            <p className="font-body text-sm sm:text-base text-muted-foreground leading-relaxed max-w-sm">
+
+            {/* Subheading Section */}
+            <p className="font-body text-base sm:text-[17px] text-muted-foreground text-center leading-relaxed max-w-xl mx-auto">
               Get trained by industry professionals, work on real projects, and secure a guaranteed internship through Vidyavya.
             </p>
-          </div>
 
-          <Button 
-            onClick={handleCTAClick}
-            variant="cta" 
-            size="lg" 
-            className="w-full sm:w-auto px-8 py-5 text-base font-semibold tracking-wide rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            Talk to a Mentor
-          </Button>
-        </div>
-      </DialogContent>
+            {/* CTA Button Section */}
+            <div className="w-full flex justify-center pt-2">
+              <Button 
+                onClick={handleCTAClick}
+                variant="cta" 
+                className="w-full sm:w-auto h-12 sm:h-14 px-10 sm:px-12 text-base sm:text-lg font-semibold tracking-wide rounded-xl shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
+              >
+                Talk to a Mentor
+              </Button>
+            </div>
+          </div>
+        </DialogPrimitive.Content>
+      </DialogPortal>
     </Dialog>
   );
 };
