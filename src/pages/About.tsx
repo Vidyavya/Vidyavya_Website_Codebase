@@ -27,7 +27,7 @@ const founders = [
   {
     name: 'Siddharth Surve',
     role: 'Founder & CEO',
-    bio: 'Siddharth founded Vidyavya to bridge the gap between academic learning and real industry needs. A seasoned entrepreneur, he also co-founded Meta for Data and focuses on building scalable, industry-driven tech businesses.',
+    bio: 'Siddharth founded Vidyavya to bridge the divide between academic learning and real-world industry requirements. With a strong focus on innovation, skill development, and career readiness, he is committed to creating opportunities that empower students to build successful and fulfilling professional journeys.',
     initials: 'SS',
     image: '/founders/siddharth.jpeg',
     linkedin: 'https://www.linkedin.com/in/siddharth-surve-a336131b9/',
@@ -35,7 +35,7 @@ const founders = [
   {
     name: 'Saachin Mane',
     role: 'Co-founder',
-    bio: 'Saachin is a tech leader with deep expertise in data, cloud, AI, and automation. Founder of Zyver and co-founder of Meta for Data, he is passionate about building next-generation technology and aligning education with real-world industry demands.',
+    bio: 'Saachin is a tech leader with deep expertise in data, cloud, AI and automation. Founder of Yukosa and Meta for Data, he is passionate about building next-generation technology and aligning education with real-world industry demands.',
     initials: 'SM',
     image: '/founders/saachin.jpeg',
     linkedin: 'https://www.linkedin.com/in/saachin-mane-75070b186/',

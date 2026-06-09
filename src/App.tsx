@@ -20,6 +20,7 @@ const queryClient = new QueryClient();
 
 import { RequestCallbackProvider } from "@/context/RequestCallbackContext";
 import RequestCallbackModal from "@/components/modals/RequestCallbackModal";
+import PromoPopup from "@/components/modals/PromoPopup";
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -28,6 +29,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <RequestCallbackModal />
+        <PromoPopup />
         <BrowserRouter>
           <ScrollToTop />
           <Routes>
