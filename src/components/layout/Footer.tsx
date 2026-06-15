@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useRequestCallback } from '@/context/RequestCallbackContext';
+import FAQSection from '@/components/layout/FAQSection';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -22,8 +23,10 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-secondary text-secondary-foreground">
-      {/* CTA Section */}
+    <>
+      <FAQSection />
+      <footer className="bg-secondary text-secondary-foreground">
+        {/* CTA Section */}
       <div className="container-custom py-12 md:py-16">
         <div className="bg-card rounded-2xl p-8 md:p-12 shadow-xl text-center">
           <h3 className="font-heading text-2xl md:text-3xl font-semibold text-foreground mb-4">
@@ -172,7 +175,8 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
+      </footer>
+    </>
   );
 };
 

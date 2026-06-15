@@ -132,7 +132,7 @@ const RequestCallbackModal = () => {
                         >
                             <DialogHeader>
                                 <DialogTitle className="text-xl md:text-2xl text-center font-heading text-foreground">
-                                    Request a CallBack
+                                    Request Callback
                                 </DialogTitle>
                                 <DialogDescription className="text-center font-body text-muted-foreground mt-2">
                                     Want to understand if Vidyavya is right for you? <br />
