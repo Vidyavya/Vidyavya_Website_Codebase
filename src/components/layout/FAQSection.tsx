@@ -37,10 +37,7 @@ const faqData = [
         question: "Is the internship guaranteed?",
         answer: "Yes. Every student enrolled in our program receives a guaranteed internship opportunity as part of their learning journey."
       },
-      {
-        question: "Is the internship paid?",
-        answer: "Yes. All eligible students have the opportunity to earn a stipend during their internship. The stipend amount depends on the student's performance, contribution to projects, and overall progress during the program and internship period."
-      },
+
       {
         question: "What kind of projects will I work on?",
         answer: "Students work on real-world projects involving data pipelines, cloud platforms, machine learning models, analytics solutions, and other industry-relevant applications."

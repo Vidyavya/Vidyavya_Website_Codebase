@@ -33,7 +33,7 @@ const HeroSection = () => {
             </h1>
             <div className="font-body text-lg md:text-xl text-muted-foreground mb-8 max-w-xl leading-relaxed space-y-4">
               <p>
-                Industry-led training in Data Engineering and AI/ML Engineering, integrated with a 6-month paid internship.
+                Industry-led training in Data Engineering and AI/ML Engineering, integrated with a 6-month internship.
               </p>
               <p>
                 Learn by working inside real tech companies through live projects, expert mentorship, and a work-integrated learning model.
@@ -81,7 +81,7 @@ const HeroSection = () => {
                     <Briefcase className="w-5 h-5 text-secondary" />
                   </div>
                   <div>
-                    <p className="font-heading font-semibold text-foreground text-sm">Paid Internship from Day 1</p>
+                    <p className="font-heading font-semibold text-foreground text-sm">Internship from Day 1</p>
                     <p className="font-body text-xs text-muted-foreground mt-1">Internship offer letter on admission with industry-aligned compensation.</p>
                   </div>
                 </div>

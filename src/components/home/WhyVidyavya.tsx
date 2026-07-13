@@ -24,7 +24,7 @@ const features = [
   {
     icon: Award,
     title: 'Guaranteed Internship',
-    description: '6-month internship on live projects with stipend.',
+    description: '6-month internship on live projects.',
   },
   {
     icon: Briefcase,

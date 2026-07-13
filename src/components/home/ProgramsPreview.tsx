@@ -66,10 +66,6 @@ const ProgramsPreview = () => {
                 <Clock className="w-4 h-4" />
                 {program.duration}
               </span>
-              <span className="flex items-center gap-1 font-body text-sm text-muted-foreground">
-                <IndianRupee className="w-4 h-4" />
-                Stipend Included
-              </span>
             </div>
 
             <ul className="space-y-3 mb-6">

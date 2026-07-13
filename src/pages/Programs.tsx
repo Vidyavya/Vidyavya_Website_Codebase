@@ -20,11 +20,7 @@ const benefits = [
     title: '6-Month Guaranteed Internship',
     description: 'Work on live projects at partner companies, gaining real industry experience.',
   },
-  {
-    icon: IndianRupee,
-    title: 'Stipend During Internship',
-    description: 'Earn while you learn with monthly stipend during your internship period.',
-  },
+
   {
     icon: Users,
     title: 'Expert Mentorship',
@@ -283,7 +279,7 @@ const Programs = () => {
           subtitle="Our programs are designed to ensure you're job-ready from day one."
           className="[&_span]:text-primary [&_h2]:text-secondary-foreground [&_p]:text-secondary-foreground/80"
         />
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {benefits.map((benefit, index) => (
             <motion.div
               key={benefit.title}
