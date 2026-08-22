@@ -3,22 +3,9 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import Section from '@/components/ui/Section';
 import SectionHeader from '@/components/ui/SectionHeader';
-import { Database, Brain, Clock, IndianRupee, Trophy, ArrowRight } from 'lucide-react';
+import { Brain, Sparkles, Clock, Trophy, ArrowRight } from 'lucide-react';
 
 const programs = [
-  {
-    icon: Database,
-    title: 'Data Engineering',
-    duration: '6 Months',
-    highlights: [
-      'ETL Pipeline Development',
-      'Cloud Data Platforms',
-      'Big Data Technologies',
-      'Real-time Data Processing',
-    ],
-    color: 'bg-accent/30',
-    iconColor: 'text-secondary',
-  },
   {
     icon: Brain,
     title: 'AI & Machine Learning',
@@ -32,6 +19,19 @@ const programs = [
     color: 'bg-primary/10',
     iconColor: 'text-primary',
   },
+  {
+    icon: Sparkles,
+    title: 'Advanced AI',
+    duration: '3 Months',
+    highlights: [
+      'Generative AI & LLMs',
+      'RAG & AI Agents',
+      'Advanced AI Applications',
+      'AI Upskilling & Career Transition',
+    ],
+    color: 'bg-accent/30',
+    iconColor: 'text-secondary',
+  },
 ];
 
 const ProgramsPreview = () => {
@@ -40,7 +40,7 @@ const ProgramsPreview = () => {
       <SectionHeader
         label="Our Programs"
         title="Choose Your Career Path"
-        subtitle="Focused programs in Data Engineering and AI/ML that prepare you for real-world roles through hands-on learning and industry exposure."
+        subtitle="Focused programs in AI/ML Engineering and Advanced AI, designed to build practical skills and prepare you for your next career move."
       />
 
       <div className="grid md:grid-cols-2 gap-8 mb-12">

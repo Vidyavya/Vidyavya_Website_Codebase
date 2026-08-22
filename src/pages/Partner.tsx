@@ -24,29 +24,29 @@ const companyBenefits = [
 const companyProcess = [
   {
     step: '01',
-    title: 'Requirement Sharing',
-    description: 'Companies share use cases or project requirements.',
+    title: 'Share Your Requirements',
+    description: 'Companies share relevant roles, skill requirements, or AI use cases.',
   },
   {
     step: '02',
-    title: 'Curriculum Alignment',
-    description: 'Vidyavya aligns training to these needs.',
+    title: 'Talent Alignment',
+    description: 'Vidyavya identifies learners whose skills and interests match the requirement.',
   },
   {
     step: '03',
-    title: 'Practical Training',
-    description: 'Students work under mentorship in real or simulated environments.',
+    title: 'Skill Evaluation',
+    description: 'Learners are evaluated based on their technical knowledge, projects, and overall readiness.',
   },
   {
     step: '04',
-    title: 'Evaluation & Hiring',
-    description: 'Companies evaluate, mentor, and hire with confidence.',
+    title: 'Connect & Hire',
+    description: 'Companies interact with shortlisted candidates and make hiring decisions based on their requirements.',
   },
 ];
 
 const collegeBenefits = [
-  'Industry-aligned Data Engineering and AI/ML training',
-  'Hands-on, project-based learning beyond classrooms',
+  'Industry-aligned training across AI/ML Engineering and Advanced AI',
+  'Hands-on, project-based learning beyond traditional classrooms',
   'Improved placement performance and employer confidence',
   'Strong industry connect for students and institutions',
 ];
@@ -64,8 +64,8 @@ const collegeProcess = [
   },
   {
     step: '03',
-    title: 'Industry Exposure',
-    description: 'Exposure to industry tools, workflows and mentorship.',
+    title: 'Industry-Relevant Learning',
+    description: 'Learn industry-relevant tools, technologies, and workflows.',
   },
   {
     step: '04',
@@ -109,76 +109,84 @@ const Partner = () => {
 
       {/* For Companies */}
       <Section className="pt-8 pb-12 md:pt-16 md:pb-24">
-        <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-stretch">
+        <div className="max-w-3xl mb-10 md:mb-12">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center">
+              <Building2 className="w-6 h-6 text-secondary-foreground" />
+            </div>
+            <span className="font-heading font-semibold text-xl text-foreground">
+              For Companies
+            </span>
+          </div>
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mb-4">
+            Access talent trained for real work
+          </h2>
+          <p className="font-body text-lg text-muted-foreground leading-relaxed">
+            Vidyavya partners with technology companies to build a strong, job-ready talent pipeline.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-10 md:gap-12 items-stretch">
+          {/* Card 1 — Why Partner With Us */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="flex flex-col justify-center"
+            className="w-full flex flex-col"
           >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center">
-                <Building2 className="w-6 h-6 text-secondary-foreground" />
+            <div className="bg-card rounded-2xl p-8 lg:p-10 shadow-[0_8px_30px_rgba(0,0,0,0.06)] w-full h-full flex flex-col justify-between">
+              <div className="flex flex-col flex-grow">
+                <h3 className="font-heading font-semibold text-2xl text-foreground mb-6 border-b border-border/50 pb-4">
+                  Why Partner With Us
+                </h3>
+                <ul className="space-y-4 md:space-y-5 flex-grow mb-6 flex flex-col justify-around">
+                  {companyBenefits.map((benefit) => (
+                    <li key={benefit} className="flex items-start gap-3.5">
+                      <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="font-body text-foreground leading-relaxed">{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <span className="font-heading font-semibold text-xl text-foreground">
-                For Companies
-              </span>
-            </div>
-            <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mb-4">
-              Access talent trained for real work
-            </h2>
-            <p className="font-body text-lg text-muted-foreground mb-8 leading-relaxed">
-              Vidyavya partners with technology companies to build a strong, job-ready talent pipeline.
-            </p>
 
-            <div className="bg-card/50 rounded-xl p-6 border border-border/50 mb-8">
-              <h3 className="font-heading font-semibold text-lg text-foreground mb-4">
-                Why Partner With Us
-              </h3>
-              <ul className="space-y-4">
-                {companyBenefits.map((benefit) => (
-                  <li key={benefit} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="font-body text-foreground">{benefit}</span>
-                  </li>
-                ))}
-              </ul>
+              <Button variant="cta" size="lg" onClick={() => setIsFormOpen(true)} className="w-full h-auto py-4 px-8 whitespace-normal text-center mt-auto">
+                Partner with Vidyavya to access industry-ready tech talent.
+                <ArrowRight className="w-5 h-5 ml-2 shrink-0 inline-block" />
+              </Button>
             </div>
-
-            <Button variant="cta" size="lg" onClick={() => setIsFormOpen(true)} className="w-full sm:w-auto h-auto py-4 px-8 whitespace-normal text-left sm:text-center mt-2">
-              Partner with Vidyavya to access industry-ready tech talent.
-              <ArrowRight className="w-5 h-5 ml-2 shrink-0" />
-            </Button>
           </motion.div>
 
+          {/* Card 2 — How It Works */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="w-full h-full"
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="w-full flex flex-col"
           >
-            <div className="bg-card rounded-2xl p-8 lg:p-10 shadow-[0_8px_30px_rgba(0,0,0,0.06)] w-full h-full flex flex-col">
-              <h3 className="font-heading font-semibold text-2xl text-foreground mb-8 border-b border-border/50 pb-4">
-                How It Works
-              </h3>
-              <div className="flex flex-col justify-between flex-grow space-y-6">
-                {companyProcess.map((item) => (
-                  <div key={item.step} className="flex gap-5 items-start">
-                    <span className="font-heading text-3xl font-bold text-primary/20 leading-none">
-                      {item.step}
-                    </span>
-                    <div className="mt-0.5">
-                      <h4 className="font-heading font-semibold text-foreground mb-1.5">
-                        {item.title}
-                      </h4>
-                      <p className="font-body text-sm text-muted-foreground leading-relaxed">
-                        {item.description}
-                      </p>
+            <div className="bg-card rounded-2xl p-8 lg:p-10 shadow-[0_8px_30px_rgba(0,0,0,0.06)] w-full h-full flex flex-col justify-between">
+              <div>
+                <h3 className="font-heading font-semibold text-2xl text-foreground mb-6 border-b border-border/50 pb-4">
+                  How It Works
+                </h3>
+                <div className="flex flex-col space-y-4 md:space-y-5">
+                  {companyProcess.map((item) => (
+                    <div key={item.step} className="flex gap-5 items-start">
+                      <span className="font-heading text-3xl font-bold text-primary/20 leading-none">
+                        {item.step}
+                      </span>
+                      <div className="mt-0.5">
+                        <h4 className="font-heading font-semibold text-foreground mb-1">
+                          {item.title}
+                        </h4>
+                        <p className="font-body text-sm text-muted-foreground leading-relaxed">
+                          {item.description}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </motion.div>
@@ -187,77 +195,85 @@ const Partner = () => {
 
       {/* For Colleges */}
       <Section variant="cream" className="py-12 md:py-24">
-        <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-stretch">
+        <div className="max-w-3xl mb-10 md:mb-12">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-12 h-12 bg-accent/50 rounded-xl flex items-center justify-center">
+              <GraduationCap className="w-6 h-6 text-foreground" />
+            </div>
+            <span className="font-heading font-semibold text-xl text-foreground">
+              For Colleges
+            </span>
+          </div>
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mb-4">
+            Create industry-ready graduates
+          </h2>
+          <p className="font-body text-lg text-muted-foreground leading-relaxed">
+            We work with colleges that want students to graduate with practical skills, confidence, and real-world exposure.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-10 md:gap-12 items-stretch">
+          {/* Card 1 — How It Works */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="lg:order-2 flex flex-col justify-center"
+            className="w-full flex flex-col"
           >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-accent/50 rounded-xl flex items-center justify-center">
-                <GraduationCap className="w-6 h-6 text-foreground" />
+            <div className="bg-card rounded-2xl p-8 lg:p-10 shadow-[0_8px_30px_rgba(0,0,0,0.06)] w-full h-full flex flex-col justify-between">
+              <div>
+                <h3 className="font-heading font-semibold text-2xl text-foreground mb-6 border-b border-border/50 pb-4">
+                  How It Works
+                </h3>
+                <div className="flex flex-col space-y-4 md:space-y-5">
+                  {collegeProcess.map((item) => (
+                    <div key={item.step} className="flex gap-5 items-start">
+                      <span className="font-heading text-3xl font-bold text-accent leading-none">
+                        {item.step}
+                      </span>
+                      <div className="mt-0.5">
+                        <h4 className="font-heading font-semibold text-foreground mb-1">
+                          {item.title}
+                        </h4>
+                        <p className="font-body text-sm text-muted-foreground leading-relaxed">
+                          {item.description}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <span className="font-heading font-semibold text-xl text-foreground">
-                For Colleges
-              </span>
             </div>
-            <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mb-4">
-              Create industry-ready graduates
-            </h2>
-            <p className="font-body text-lg text-muted-foreground mb-8 leading-relaxed">
-              We work with colleges that want students to graduate with practical skills, confidence, and real-world exposure.
-            </p>
-
-            <div className="bg-card/50 rounded-xl p-6 border border-border/50 mb-8">
-              <h3 className="font-heading font-semibold text-lg text-foreground mb-4">
-                Why Partner With Us
-              </h3>
-              <ul className="space-y-4">
-                {collegeBenefits.map((benefit) => (
-                  <li key={benefit} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="font-body text-foreground">{benefit}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <Button variant="cta" size="lg" onClick={() => setIsFormOpen(true)} className="w-full sm:w-auto h-auto py-4 px-8 whitespace-normal text-left sm:text-center mt-2">
-              Let’s build industry-ready graduates together.
-              <ArrowRight className="w-5 h-5 ml-2 shrink-0" />
-            </Button>
           </motion.div>
 
+          {/* Card 2 — Why Partner With Us */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="lg:order-1 w-full h-full"
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="w-full flex flex-col"
           >
-            <div className="bg-card rounded-2xl p-8 lg:p-10 shadow-[0_8px_30px_rgba(0,0,0,0.06)] w-full h-full flex flex-col">
-              <h3 className="font-heading font-semibold text-2xl text-foreground mb-8 border-b border-border/50 pb-4">
-                How It Works
-              </h3>
-              <div className="flex flex-col justify-between flex-grow space-y-6">
-                {collegeProcess.map((item) => (
-                  <div key={item.step} className="flex gap-5 items-start">
-                    <span className="font-heading text-3xl font-bold text-accent leading-none">
-                      {item.step}
-                    </span>
-                    <div className="mt-0.5">
-                      <h4 className="font-heading font-semibold text-foreground mb-1.5">
-                        {item.title}
-                      </h4>
-                      <p className="font-body text-sm text-muted-foreground leading-relaxed">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                ))}
+            <div className="bg-card rounded-2xl p-8 lg:p-10 shadow-[0_8px_30px_rgba(0,0,0,0.06)] w-full h-full flex flex-col justify-between">
+              <div className="flex flex-col flex-grow">
+                <h3 className="font-heading font-semibold text-2xl text-foreground mb-6 border-b border-border/50 pb-4">
+                  Why Partner With Us
+                </h3>
+                <ul className="space-y-4 md:space-y-5 flex-grow mb-6 flex flex-col justify-around">
+                  {collegeBenefits.map((benefit) => (
+                    <li key={benefit} className="flex items-start gap-3.5">
+                      <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="font-body text-foreground leading-relaxed">{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
+
+              <Button variant="cta" size="lg" onClick={() => setIsFormOpen(true)} className="w-full h-auto py-4 px-8 whitespace-normal text-center mt-auto">
+                Let’s build industry-ready graduates together.
+                <ArrowRight className="w-5 h-5 ml-2 shrink-0 inline-block" />
+              </Button>
             </div>
           </motion.div>
         </div>

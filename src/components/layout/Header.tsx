@@ -8,7 +8,6 @@ import { useRequestCallback } from '@/context/RequestCallbackContext';
 const navLinks = [
   { name: 'About', href: '/about' },
   { name: 'Programs', href: '/programs' },
-  { name: 'Student Life', href: '/student-life' },
   { name: 'Contact Us', href: '/contact' },
   { name: 'Partner With Us', href: '/partner' },
 ];

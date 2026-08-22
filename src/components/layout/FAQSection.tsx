@@ -14,41 +14,19 @@ const faqData = [
     faqs: [
       {
         question: "What makes Vidyavya different from other training institutes?",
-        answer: "Vidyavya focuses on real-world industry skills rather than just theory. Students work on practical projects, gain industry exposure, complete internships, and receive career support to become job-ready."
+        answer: "Vidyavya focuses on practical, industry-relevant AI skills rather than theory alone. Learners work on hands-on projects, learn modern tools and technologies, receive guidance from industry professionals, and get career support to build relevant, job-ready skills."
       },
       {
         question: "Which programs does Vidyavya offer?",
-        answer: "Currently, Vidyavya offers specialized programs in Data Engineering and AI/ML Engineering."
+        answer: "Currently, Vidyavya offers two specialized programs: AI/ML Engineering and Advanced AI. The AI/ML Engineering program builds strong foundations in machine learning and AI, while Advanced AI focuses on GenAI, LLMs, RAG, Agentic AI, and production-ready AI systems."
       },
       {
         question: "Who are these programs designed for?",
-        answer: "Our programs are ideal for engineering students, recent graduates, job seekers, and professionals looking to build a career in Data Engineering or AI/ML."
+        answer: "Our programs are ideal for engineering students, recent graduates, job seekers, and professionals looking to build a career in AI/ML."
       },
       {
         question: "Is the curriculum industry-relevant?",
         answer: "Yes. The curriculum is designed around real-world tools, technologies, and workflows used by leading technology companies."
-      }
-    ]
-  },
-  {
-    category: "Internship & Industry Exposure",
-    faqs: [
-      {
-        question: "Is the internship guaranteed?",
-        answer: "Yes. Every student enrolled in our program receives a guaranteed internship opportunity as part of their learning journey."
-      },
-
-      {
-        question: "What kind of projects will I work on?",
-        answer: "Students work on real-world projects involving data pipelines, cloud platforms, machine learning models, analytics solutions, and other industry-relevant applications."
-      },
-      {
-        question: "Where will the internship be conducted?",
-        answer: "Internships are conducted at the offices of Vidyavya's partner companies, where students gain hands-on experience by working in a real professional environment."
-      },
-      {
-        question: "Will I receive an internship certificate?",
-        answer: "Yes. Students who successfully complete their internship receive an internship completion certificate."
       }
     ]
   },
@@ -61,7 +39,7 @@ const faqData = [
       },
       {
         question: "What career opportunities can I pursue after completing the program?",
-        answer: "Upon completion, students can explore roles such as Data Engineer, AI Engineer, Machine Learning Engineer, Data Analyst, Cloud Data Engineer, Business Intelligence Developer, and other related positions."
+        answer: "Depending on the program and your prior experience, learners can build skills relevant to roles such as AI/ML Engineer, Machine Learning Engineer, AI Engineer, Generative AI Engineer, LLM Engineer, and AI Solutions Developer, among other AI-focused roles."
       },
       {
         question: "What salary can I expect after completing the program?",
@@ -82,7 +60,7 @@ const faqData = [
       },
       {
         question: "What is the duration of the program?",
-        answer: "The program is designed to be completed over 6 months, combining structured training, real-world projects, and internship experience to help students become job-ready."
+        answer: "Our programs range from 3 to 6 months, combining structured training, real-world projects, and mentorship to help students become job-ready."
       },
       {
         question: "Will I get mentorship from industry professionals?",
@@ -90,7 +68,7 @@ const faqData = [
       },
       {
         question: "How much practical learning is involved?",
-        answer: "Practical learning is at the core of the Vidyavya experience. Students spend significant time working on real-world projects and gaining hands-on industry exposure through internships at our partner companies, helping them develop the skills and experience employers look for."
+        answer: "Practical learning is at the core of the Vidyavya experience. Students spend significant time working on real-world projects and gaining hands-on practical exposure, helping them develop the skills and experience employers look for."
       }
     ]
   },
@@ -119,16 +97,12 @@ const faqData = [
     category: "Trust & Outcomes",
     faqs: [
       {
-        question: "Why do you focus on internships and real-world projects?",
-        answer: "Employers value practical experience. Our learn → intern → get hired approach helps bridge the gap between academic education and industry expectations."
-      },
-      {
-        question: "What support will I receive after completing the course?",
-        answer: "Students continue to receive placement assistance, career guidance, networking opportunities, and professional development support."
+        question: "Why do you focus on real-world projects?",
+        answer: "Employers value practical experience. Our hands-on project-based approach helps bridge the gap between academic education and industry expectations."
       },
       {
         question: "How do I know if Vidyavya is the right fit for me?",
-        answer: "If your goal is to build practical skills, gain real industry exposure, work on live projects, and improve your employability, Vidyavya is designed for you."
+        answer: "If your goal is to build practical skills, work on live projects, and improve your employability in AI, Vidyavya is designed for you."
       },
       {
         question: "Can parents speak with the admissions team before enrollment?",
@@ -190,7 +164,7 @@ const FAQSection = () => {
         </div>
 
         {/* Desktop Sidebar Navigation */}
-        <div className="hidden lg:block w-64 flex-shrink-0">
+        <div className="hidden lg:block w-56 flex-shrink-0">
           <div className="sticky top-24 bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 p-2 shadow-sm">
             <nav className="flex flex-col space-y-1">
               {faqData.map((category, index) => {
@@ -232,9 +206,9 @@ const FAQSection = () => {
                 <AccordionItem
                   key={`${displayedCategoryIndex}-${index}`}
                   value={`item-${index}`}
-                  className="border-b border-border/40 last:border-0 px-6 py-1"
+                  className="border-b border-border/40 last:border-0 px-6 sm:px-8 py-1"
                 >
-                  <AccordionTrigger className="hover:no-underline text-left text-base md:text-lg font-semibold py-5 text-foreground/90 hover:text-primary transition-colors">
+                  <AccordionTrigger className="hover:no-underline text-left text-base md:text-lg font-semibold py-5 text-foreground/90 hover:text-primary transition-colors gap-6 md:gap-8">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground font-body text-base leading-relaxed pb-6">

@@ -21,8 +21,7 @@ import {
   Github,
   Linkedin,
   Mic,
-  MessageSquare,
-  Users
+  MessageSquare
 } from 'lucide-react';
 
 const fadeIn = {
@@ -67,8 +66,7 @@ const DataEngineering = () => {
             className="max-w-4xl"
           >
             <motion.h1 variants={fadeIn} className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8">
-              Data<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#A8D8EA]">Engineering</span><br />
+              Data <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#A8D8EA]">Engineering</span><br />
               Career Program
             </motion.h1>
 
@@ -80,10 +78,6 @@ const DataEngineering = () => {
               <div className="px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center">
                 <Calendar className="w-4 h-4 mr-2 text-[#A8D8EA]" />
                 6 Months · 24 Weeks
-              </div>
-              <div className="px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center">
-                <Users className="w-4 h-4 mr-2 text-[#A8D8EA]" />
-                Classroom
               </div>
               <div className="px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center">
                 <Hammer className="w-4 h-4 mr-2 text-[#A8D8EA]" />

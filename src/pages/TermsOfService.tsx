@@ -29,7 +29,7 @@ const TermsOfService = () => {
                     <section>
                         <h2 className="text-xl font-bold mb-3">About Vidyavya</h2>
                         <p>
-                            Vidyavya is an education and training platform that offers industry-aligned programs, learning resources, and partnerships focused on Data Engineering, AI/ML, and related technology domains.
+                            Vidyavya is an education and training platform that offers industry-aligned programs, learning resources, and partnerships focused on AI/ML Engineering, Advanced AI, and related technology domains.
                         </p>
                     </section>
 

@@ -8,7 +8,8 @@ import About from "./pages/About";
 import Programs from "./pages/Programs";
 import DataEngineering from "./pages/DataEngineering";
 import AIMLEngineering from "./pages/AIMLEngineering";
-import StudentLife from "./pages/StudentLife";
+import AdvancedAI from "./pages/AdvancedAI";
+// import StudentLife from "./pages/StudentLife";
 import Partner from "./pages/Partner";
 import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -38,7 +39,8 @@ const App = () => (
             <Route path="/programs" element={<Programs />} />
             <Route path="/programs/data-engineering" element={<DataEngineering />} />
             <Route path="/programs/ai-ml-engineering" element={<AIMLEngineering />} />
-            <Route path="/student-life" element={<StudentLife />} />
+            <Route path="/programs/advanced-ai" element={<AdvancedAI />} />
+            {/* <Route path="/student-life" element={<StudentLife />} /> */}
             <Route path="/partner" element={<Partner />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />

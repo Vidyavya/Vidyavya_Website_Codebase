@@ -13,8 +13,8 @@ const features = [
   },
   {
     icon: Lightbulb,
-    title: 'Practical Learning',
-    description: 'Work on real projects, real data, and real systems from day one.',
+    title: 'Industry-Relevant Learning',
+    description: 'Go beyond theory with practical applications, tools, and modern AI workflows.',
   },
   {
     icon: Users,
@@ -23,33 +23,33 @@ const features = [
   },
   {
     icon: Award,
-    title: 'Guaranteed Internship',
-    description: '6-month internship on live projects.',
+    title: 'Advanced AI Skills',
+    description: 'Master modern AI capabilities and build skills aligned with the future of intelligence.',
   },
   {
     icon: Briefcase,
     title: 'Career Support',
-    description: 'Dedicated placement assistance and interview prep.',
+    description: 'Portfolio refinement, technical interview prep, and career guidance for AI roles.',
   },
   {
     icon: Rocket,
-    title: 'Live Projects',
-    description: 'Build a production-ready portfolio that stands out.',
+    title: 'Hands-On Projects',
+    description: 'Apply your learning through practical projects based on real-world AI use cases.',
   },
   {
     icon: FileCheck,
-    title: 'Industry Certified',
-    description: 'Get recognized certifications upon completion.',
+    title: 'Industry Certification',
+    description: 'Earn a certificate that recognizes your skills and successful completion of the program.',
   },
 ];
 
 const WhyVidyavya = () => {
   return (
-    <Section>
+    <Section className="pt-6 md:pt-10 pb-12 md:pb-16">
       <SectionHeader
         label="Why Choose Vidyavya?"
-        title="Where Learning Meets Real Work"
-        subtitle="Unlike traditional institutes, Vidyavya is built around how the tech industry actually works. Our programs turn theory into execution through real projects, mentorship, and workplace exposure."
+        title="Built for the Future of AI"
+        subtitle="Vidyavya combines industry-led learning, practical application, and career-focused support to help students and professionals build relevant AI skills and confidently take their next career step."
       />
 
       <div className="relative overflow-hidden mb-12 py-4">

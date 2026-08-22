@@ -22,7 +22,6 @@ import {
   Linkedin,
   Mic,
   MessageSquare,
-  Users,
   BrainCircuit,
   Rocket,
   Microscope,
@@ -71,8 +70,7 @@ const AIMLEngineering = () => {
             className="max-w-4xl"
           >
             <motion.h1 variants={fadeIn} className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8">
-              AI / ML<br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-primary">Engineering</span><br/>
+              AI / ML <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-primary">Engineering</span><br />
               Career Program
             </motion.h1>
             
@@ -84,10 +82,6 @@ const AIMLEngineering = () => {
               <div className="px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center">
                 <Calendar className="w-4 h-4 mr-2 text-primary" />
                 6 Months · 24 Weeks
-              </div>
-              <div className="px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center">
-                <Users className="w-4 h-4 mr-2 text-primary" />
-                Classroom
               </div>
               <div className="px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center">
                 <BrainCircuit className="w-4 h-4 mr-2 text-primary" />
@@ -409,7 +403,7 @@ const AIMLEngineering = () => {
             { n: "01", t: "Build ML Systems End-to-End", d: "Train, evaluate, and iterate on machine learning models across regression, classification, and deep learning domains using real frameworks." },
             { n: "02", t: "Deploy to Production", d: "Package and ship models to AWS and Google Cloud as reliable, monitored production APIs using modern MLOps and DevOps practices." },
             { n: "03", t: "Build Applied AI Applications", d: "Design and build NLP pipelines, recommendation systems, computer vision apps, and LLM-powered tools that solve real user problems." },
-            { n: "04", t: "Work in Real Teams", d: "Collaborate using Git, communicate technical decisions clearly, and contribute effectively to professional engineering environments from day one." }
+            { n: "04", t: "Ship Real-World AI Products", d: "Solve complex business problems by converting raw data into intelligent, production-grade systems that deliver measurable value." }
           ].map((item, idx) => (
             <motion.div 
               key={idx}

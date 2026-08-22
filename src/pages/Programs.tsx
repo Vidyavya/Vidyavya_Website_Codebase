@@ -6,30 +6,28 @@ import SectionHeader from '@/components/ui/SectionHeader';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import {
+  Laptop,
   Briefcase,
-  IndianRupee,
   Users,
-  Trophy,
   ArrowRight,
 } from 'lucide-react';
 import { useRequestCallback } from '@/context/RequestCallbackContext';
 
 const benefits = [
   {
-    icon: Briefcase,
-    title: '6-Month Guaranteed Internship',
-    description: 'Work on live projects at partner companies, gaining real industry experience.',
+    icon: Laptop,
+    title: 'Hands-On Learning',
+    description: 'Build your skills through practical projects, labs, and real-world AI applications.',
   },
-
   {
     icon: Users,
     title: 'Expert Mentorship',
     description: 'Learn from senior industry professionals with decades of hands-on experience.',
   },
   {
-    icon: Trophy,
-    title: 'Job Opportunities',
-    description: 'Top performers get fast-tracked for full-time positions at partner companies.',
+    icon: Briefcase,
+    title: 'Career Support',
+    description: 'Get guidance on portfolios, resumes, interviews, and building your career in AI.',
   },
 ];
 
@@ -39,7 +37,7 @@ const Programs = () => {
     <Layout>
       <SEO 
         title="Programs | Vidyavya"
-        description="Explore Vidyavya's AI/ML and Data Engineering programs designed with hands-on projects, mentorship, and industry exposure."
+        description="Explore Vidyavya's AI/ML Engineering and Advanced AI programs built around hands-on projects, expert mentorship, and practical AI capabilities."
         url="https://www.vidyavya.com/programs"
       />
       {/* Hero */}
@@ -56,7 +54,7 @@ const Programs = () => {
             </h1>
             <div className="space-y-4 mb-6">
               <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed">
-                Intensive 6-month engineering tracks built around the skills that technology companies actually hire for.
+                Focused AI programs built around the technologies, tools, and skills shaping the future of intelligence.
               </p>
               <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed">
                 Choose the path that aligns with your career goals.
@@ -73,109 +71,12 @@ const Programs = () => {
 
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
             
-            {/* Card 1 — Data Engineering */}
+            {/* Card 1 — AI / ML Engineering */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="flex flex-col bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-[0_20px_40px_rgba(52,73,94,0.45)] hover:-translate-y-2 transition-all duration-300 border border-border/50"
-            >
-              {/* Top Section */}
-              <div className="bg-[#34495E] text-white p-8 md:p-10">
-                <h3 className="font-heading text-3xl font-bold mb-4 text-white">
-                  Data Engineering
-                </h3>
-                <p className="font-body text-sm md:text-base opacity-90 leading-relaxed mb-6 text-white">
-                  Build modern data platforms, pipelines, and analytics infrastructure used by leading tech companies.
-                </p>
-                <div className="flex flex-wrap gap-3 mt-2">
-                  <span className="px-4 py-1.5 bg-white/10 text-white rounded-full text-xs font-semibold shadow-sm border border-white/20 whitespace-nowrap">
-                    6 Months
-                  </span>
-                  <span className="px-4 py-1.5 bg-white/10 text-white rounded-full text-xs font-semibold shadow-sm border border-white/20 whitespace-nowrap">
-                    Hands-On Projects
-                  </span>
-                  <span className="px-4 py-1.5 bg-white/10 text-white rounded-full text-xs font-semibold shadow-sm border border-white/20 whitespace-nowrap">
-                    Cloud Deployment
-                  </span>
-                </div>
-              </div>
-
-              {/* Tech Stack Icons Row */}
-              <div className="bg-muted/30 border-b border-border/50 py-5 px-8 md:px-10 overflow-hidden relative">
-                <span className="inline-block font-accent text-[10px] font-semibold tracking-widest text-muted-foreground uppercase mb-4">
-                  Core Technologies
-                </span>
-                <div className="flex flex-nowrap gap-4 md:gap-[16px] items-center justify-center mt-2 pb-2">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Python" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="PostgreSQL" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" alt="Apache Spark" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Apache Spark" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" alt="Apache Kafka" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Apache Kafka" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" alt="Apache Airflow" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Apache Airflow" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" className="h-8 md:h-9 w-auto hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Amazon Web Services" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Docker" />
-                </div>
-              </div>
-
-              {/* Course Outline */}
-              <div className="p-8 md:p-10 flex-grow flex flex-col">
-                <span className="inline-block font-accent text-xs font-semibold tracking-widest text-muted-foreground uppercase mb-6">
-                  Course Outline
-                </span>
-                <div className="space-y-8 flex-grow mb-8">
-                  <div className="flex gap-4">
-                    <span className="font-heading font-bold text-[#34495E] text-lg">01</span>
-                    <div>
-                      <h4 className="font-heading font-semibold text-foreground mb-2">Engineering Foundations</h4>
-                      <p className="font-body text-sm text-muted-foreground leading-relaxed">Linux, shell scripting, Git, Python, and SQL - the core toolkit every data engineer needs to work in real codebases.</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-4">
-                    <span className="font-heading font-bold text-[#34495E] text-lg">02</span>
-                    <div>
-                      <h4 className="font-heading font-semibold text-foreground mb-2">Data Modeling & Pipelines</h4>
-                      <p className="font-body text-sm text-muted-foreground leading-relaxed">ETL/ELT design, dimensional modeling, data quality validation, and building end-to-end analytical pipelines from raw source data.</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-4">
-                    <span className="font-heading font-bold text-[#34495E] text-lg">03</span>
-                    <div>
-                      <h4 className="font-heading font-semibold text-foreground mb-2">Distributed Systems & Streaming</h4>
-                      <p className="font-body text-sm text-muted-foreground leading-relaxed">Apache Spark for large-scale batch processing and Apache Kafka for real-time event streaming and pipeline design.</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-4">
-                    <span className="font-heading font-bold text-[#34495E] text-lg">04</span>
-                    <div>
-                      <h4 className="font-heading font-semibold text-foreground mb-2">Cloud, Orchestration & Analytics Engineering</h4>
-                      <p className="font-body text-sm text-muted-foreground leading-relaxed">AWS & GCP cloud platforms, data lake architecture, Apache Airflow for orchestration, and dbt for transformation layers.</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-4">
-                    <span className="font-heading font-bold text-[#34495E] text-lg">05</span>
-                    <div>
-                      <h4 className="font-heading font-semibold text-foreground mb-2">System Design, BI & Production</h4>
-                      <p className="font-body text-sm text-muted-foreground leading-relaxed">Business metrics, Power BI & Tableau dashboards, data platform architecture, security, compliance, and a full capstone project.</p>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* CTA */}
-                <Button variant="outline" className="w-full text-[#34495E] border-[#34495E] hover:bg-[#34495E] hover:text-white transition-colors" asChild>
-                  <Link to="/programs/data-engineering">
-                    Know More
-                  </Link>
-                </Button>
-              </div>
-            </motion.div>
-
-            {/* Card 2 — AI / ML Engineering */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
               className="flex flex-col bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-[0_20px_40px_rgba(255,87,87,0.45)] hover:-translate-y-2 transition-all duration-300 border border-border/50"
             >
               {/* Top Section */}
@@ -220,46 +121,46 @@ const Programs = () => {
                 <span className="inline-block font-accent text-xs font-semibold tracking-widest text-muted-foreground uppercase mb-6">
                   Course Outline
                 </span>
-                <div className="space-y-8 flex-grow mb-8">
+                <div className="space-y-6 md:space-y-7 flex-grow mb-8 flex flex-col justify-between">
                   <div className="flex gap-4">
                     <span className="font-heading font-bold text-primary text-lg">01</span>
                     <div>
-                      <h4 className="font-heading font-semibold text-foreground mb-2">Python, Data & ML Fundamentals</h4>
+                      <h4 className="font-heading font-semibold text-foreground mb-1.5">Python, Data & ML Fundamentals</h4>
                       <p className="font-body text-sm text-muted-foreground leading-relaxed">Advanced Python, NumPy, Pandas, feature engineering, and core ML models - regression, classification, and clustering with scikit-learn.</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <span className="font-heading font-bold text-primary text-lg">02</span>
                     <div>
-                      <h4 className="font-heading font-semibold text-foreground mb-2">Deep Learning</h4>
+                      <h4 className="font-heading font-semibold text-foreground mb-1.5">Deep Learning</h4>
                       <p className="font-body text-sm text-muted-foreground leading-relaxed">Neural networks, CNNs for image data, RNNs and LSTMs for sequences, and transfer learning with TensorFlow and PyTorch.</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <span className="font-heading font-bold text-primary text-lg">03</span>
                     <div>
-                      <h4 className="font-heading font-semibold text-foreground mb-2">MLOps & Production Deployment</h4>
+                      <h4 className="font-heading font-semibold text-foreground mb-1.5">MLOps & Production Deployment</h4>
                       <p className="font-body text-sm text-muted-foreground leading-relaxed">Package, deploy, and monitor ML models as live production APIs - with CI/CD automation and model drift detection.</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <span className="font-heading font-bold text-primary text-lg">04</span>
                     <div>
-                      <h4 className="font-heading font-semibold text-foreground mb-2">Applied AI Systems</h4>
+                      <h4 className="font-heading font-semibold text-foreground mb-1.5">Applied AI Systems</h4>
                       <p className="font-body text-sm text-muted-foreground leading-relaxed">NLP pipelines, recommendation engines, computer vision applications, and LLM-based tools with prompt engineering for real users.</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <span className="font-heading font-bold text-primary text-lg">05</span>
                     <div>
-                      <h4 className="font-heading font-semibold text-foreground mb-2">ML System Design & Capstone</h4>
+                      <h4 className="font-heading font-semibold text-foreground mb-1.5">ML System Design & Capstone</h4>
                       <p className="font-body text-sm text-muted-foreground leading-relaxed">Inference architecture, model scaling, feature stores, and a complete end-to-end AI system as a production-ready portfolio project.</p>
                     </div>
                   </div>
                 </div>
                 
                 {/* CTA */}
-                <Button variant="outline" className="w-full text-primary border-primary hover:bg-primary hover:text-white transition-colors" asChild>
+                <Button variant="outline" className="w-full text-primary border-primary hover:bg-primary hover:text-white transition-colors mt-auto" asChild>
                   <Link to="/programs/ai-ml-engineering">
                     Know More
                   </Link>
@@ -267,6 +168,102 @@ const Programs = () => {
               </div>
             </motion.div>
 
+            {/* Card 2 — Advanced AI */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="flex flex-col bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-[0_20px_40px_rgba(52,73,94,0.45)] hover:-translate-y-2 transition-all duration-300 border border-border/50"
+            >
+              {/* Top Section */}
+              <div className="bg-[#34495E] text-white p-8 md:p-10">
+                <h3 className="font-heading text-3xl font-bold mb-4 text-white">
+                  Advanced AI
+                </h3>
+                <p className="font-body text-sm md:text-base opacity-90 leading-relaxed mb-6 text-white">
+                  Build and deploy advanced AI systems with GenAI, LLMs, RAG, and Agentic AI.
+                </p>
+                <div className="flex flex-wrap gap-3 mt-2">
+                  <span className="px-4 py-1.5 bg-white/10 text-white rounded-full text-xs font-semibold shadow-sm border border-white/20 whitespace-nowrap">
+                    3 Months
+                  </span>
+                  <span className="px-4 py-1.5 bg-white/10 text-white rounded-full text-xs font-semibold shadow-sm border border-white/20 whitespace-nowrap">
+                    Hands-On Projects
+                  </span>
+                  <span className="px-4 py-1.5 bg-white/10 text-white rounded-full text-xs font-semibold shadow-sm border border-white/20 whitespace-nowrap">
+                    Industry-Ready Skills
+                  </span>
+                </div>
+              </div>
+
+              {/* Tech Stack Icons Row */}
+              <div className="bg-muted/30 border-b border-border/50 py-5 px-8 md:px-10 overflow-hidden relative">
+                <span className="inline-block font-accent text-[10px] font-semibold tracking-widest text-muted-foreground uppercase mb-4">
+                  Core Technologies
+                </span>
+                <div className="flex flex-nowrap gap-4 md:gap-[16px] items-center justify-center mt-2 pb-2">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" alt="PyTorch" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="PyTorch" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="TensorFlow" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="GCP" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Google Cloud Platform" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" alt="NumPy" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="NumPy" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="scikit-learn" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="scikit-learn" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" className="h-8 md:h-9 w-auto hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Amazon Web Services" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="Pandas" className="h-8 md:h-9 w-8 md:w-9 hover:scale-110 hover:-translate-y-1 transition-transform flex-shrink-0 drop-shadow-sm" title="Pandas" />
+                </div>
+              </div>
+
+              {/* Course Outline */}
+              <div className="p-8 md:p-10 flex-grow flex flex-col">
+                <span className="inline-block font-accent text-xs font-semibold tracking-widest text-muted-foreground uppercase mb-6">
+                  Course Outline
+                </span>
+                <div className="space-y-6 md:space-y-7 flex-grow mb-8 flex flex-col justify-between">
+                  <div className="flex gap-4">
+                    <span className="font-heading font-bold text-[#34495E] text-lg">01</span>
+                    <div>
+                      <h4 className="font-heading font-semibold text-foreground mb-1.5">AI & ML Foundations</h4>
+                      <p className="font-body text-sm text-muted-foreground leading-relaxed">Python for AI, linear algebra, probability, ML fundamentals, deep learning, model evaluation, and transformers.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <span className="font-heading font-bold text-[#34495E] text-lg">02</span>
+                    <div>
+                      <h4 className="font-heading font-semibold text-foreground mb-1.5">GenAI & LLM Engineering</h4>
+                      <p className="font-body text-sm text-muted-foreground leading-relaxed">Prompt engineering strategies, embeddings, vector search, LLMs, fine-tuning, distillation, and structured outputs.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <span className="font-heading font-bold text-[#34495E] text-lg">03</span>
+                    <div>
+                      <h4 className="font-heading font-semibold text-foreground mb-1.5">RAG & Advanced AI Applications</h4>
+                      <p className="font-body text-sm text-muted-foreground leading-relaxed">Build production RAG applications using retrieval, vector search, contextual generation, and function calling.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <span className="font-heading font-bold text-[#34495E] text-lg">04</span>
+                    <div>
+                      <h4 className="font-heading font-semibold text-foreground mb-1.5">Agentic AI</h4>
+                      <p className="font-body text-sm text-muted-foreground leading-relaxed">Build autonomous agents using tool use, memory design, multi-agent orchestration, MCP, and evaluation.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <span className="font-heading font-bold text-[#34495E] text-lg">05</span>
+                    <div>
+                      <h4 className="font-heading font-semibold text-foreground mb-1.5">Production AI & MLOps</h4>
+                      <p className="font-body text-sm text-muted-foreground leading-relaxed">Deploy AI systems to cloud endpoints with containerization, drift monitoring, observability, governance, and cost tracking.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* CTA */}
+                <Button variant="outline" className="w-full text-[#34495E] border-[#34495E] hover:bg-[#34495E] hover:text-white transition-colors mt-auto" asChild>
+                  <Link to="/programs/advanced-ai">
+                    Know More <ArrowRight className="w-4 h-4 ml-1.5 inline-block" />
+                  </Link>
+                </Button>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>

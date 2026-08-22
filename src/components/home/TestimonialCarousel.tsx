@@ -1,12 +1,10 @@
 import { Star } from 'lucide-react';
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 
 const testimonials = [
   {
     name: 'Rahul Sharma',
-    role: 'Data Engineer',
-    year: '2024',
+    role: 'AI/ML Engineer',
+    year: '2025',
     feedback: 'Vidyavya transformed my career. The hands-on projects and mentorship prepared me for real-world challenges. Within months, I was working on production systems.',
     image: null,
   },
@@ -14,7 +12,7 @@ const testimonials = [
     name: 'Priya Patel',
     role: 'ML Engineer',
     year: '2025',
-    feedback: 'The practical approach at Vidyavya is unmatched. I learned more in 6 months here than in 4 years of college. The internship experience was invaluable.',
+    feedback: 'The practical approach at Vidyavya is unmatched. I learned more in 6 months here than in 4 years of college. The hands-on project experience was invaluable.',
     image: null,
   },
   {
@@ -34,22 +32,13 @@ const testimonials = [
   {
     name: 'Vikram Singh',
     role: 'Software Engineer',
-    year: '2024',
-    feedback: 'Vidyavya\'s focus on execution over theory is exactly what the industry needs. I was job-ready from day one of my internship.',
+    year: '2026',
+    feedback: 'Vidyavya\'s focus on execution over theory is exactly what the industry needs. I was building production-ready AI models from day one.',
     image: null,
   },
 ];
 
 const TestimonialCarousel = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % testimonials.length);
-    }, 3500);
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <div className="py-16 md:py-24 bg-secondary overflow-hidden">
       <div className="container-custom mb-10">
@@ -61,55 +50,14 @@ const TestimonialCarousel = () => {
         </p>
       </div>
 
-      {/* Mobile View: Single card fading carousel */}
-      <div className="md:hidden relative px-4 w-full max-w-[400px] mx-auto min-h-[380px]">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={activeIndex}
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -15 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            className="absolute inset-x-4 top-0"
-          >
-            <div className="bg-card rounded-xl p-6 md:p-8 shadow-card hover:shadow-xl transition-all duration-300 w-full flex flex-col min-h-[320px] md:min-h-[350px]">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-primary text-primary" />
-                ))}
-              </div>
-              <p className="font-body text-[15px] text-foreground mb-6 leading-relaxed min-h-[110px]">
-                "{testimonials[activeIndex].feedback}"
-              </p>
-              <div className="flex items-center gap-4 mt-auto">
-                <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center shrink-0">
-                  <span className="font-heading font-semibold text-foreground">
-                    {testimonials[activeIndex].name.split(' ').map(n => n[0]).join('')}
-                  </span>
-                </div>
-                <div>
-                  <p className="font-heading font-semibold text-foreground text-sm">
-                    {testimonials[activeIndex].name}
-                  </p>
-                  <p className="font-body text-xs text-muted-foreground">
-                    {testimonials[activeIndex].role} • {testimonials[activeIndex].year}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        </AnimatePresence>
-      </div>
-
-      {/* Desktop View: Infinite Scroll */}
-      <div className="hidden md:block relative group py-4">
-        <div className="flex testimonial-scroll group-hover:[animation-play-state:paused]">
+      <div className="relative group py-4">
+        <div className="flex testimonial-scroll w-max group-hover:[animation-play-state:paused]">
           {/* First set */}
           <div className="flex gap-6 px-3">
             {testimonials.map((testimonial, index) => (
               <div
                 key={`testimonial-1-${index}`}
-                className="flex-shrink-0 w-[350px] md:w-[400px] bg-card rounded-xl p-6 shadow-card transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl flex flex-col min-h-[280px]"
+                className="flex-shrink-0 w-[300px] sm:w-[350px] md:w-[400px] bg-card rounded-xl p-6 shadow-card transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl flex flex-col min-h-[280px]"
               >
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -137,12 +85,12 @@ const TestimonialCarousel = () => {
               </div>
             ))}
           </div>
-          {/* Duplicate for seamless loop */}
+          {/* Duplicate set for seamless infinite loop */}
           <div className="flex gap-6 px-3">
             {testimonials.map((testimonial, index) => (
               <div
                 key={`testimonial-2-${index}`}
-                className="flex-shrink-0 w-[350px] md:w-[400px] bg-card rounded-xl p-6 shadow-card transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl flex flex-col min-h-[280px]"
+                className="flex-shrink-0 w-[300px] sm:w-[350px] md:w-[400px] bg-card rounded-xl p-6 shadow-card transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl flex flex-col min-h-[280px]"
               >
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (

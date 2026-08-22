@@ -58,7 +58,7 @@ const PromoPopup = () => {
 
             {/* Subheading Section */}
             <p className="font-body text-base sm:text-[17px] text-muted-foreground text-center leading-relaxed max-w-xl mx-auto">
-              Get trained by industry professionals, work on real projects, and secure a guaranteed internship through Vidyavya.
+              Master modern AI engineering, build production-grade systems, and step confidently into the future of technology.
             </p>
 
             {/* CTA Button Section */}

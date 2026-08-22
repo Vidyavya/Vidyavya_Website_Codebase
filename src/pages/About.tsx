@@ -9,17 +9,17 @@ const modelSteps = [
   {
     step: '01',
     title: 'Learn',
-    description: 'Master Data or AI through expert-led, hands-on training.',
+    description: 'Master AI through expert-led, hands-on training designed around industry-relevant skills and technologies.',
   },
   {
     step: '02',
-    title: 'Build',
-    description: 'Apply your learning on live industry projects with our partner companies.',
+    title: 'Apply',
+    description: 'Apply what you learn through practical projects and real-world AI use cases.',
   },
   {
     step: '03',
     title: 'Launch',
-    description: 'Step confidently into your tech career with mentorship & support.',
+    description: 'Step confidently into your AI career with mentorship & support.',
   },
 ];
 
@@ -47,7 +47,7 @@ const About = () => {
     <Layout>
       <SEO 
         title="About Us | Vidyavya"
-        description="Learn about Vidyavya's mission to train the next generation of AI/ML and Data Engineering professionals through real-world learning."
+        description="Learn about Vidyavya's mission to train the next generation of AI professionals through real-world learning."
         url="https://www.vidyavya.com/about"
       />
       {/* Hero */}
@@ -84,7 +84,7 @@ const About = () => {
                 Vidyavya was created to solve a simple problem. Engineering education produces degree holders, not industry-ready professionals.
               </p>
               <p>
-                Built by founders running technology companies in data, cloud, and AI, Vidyavya bridges the gap between theory and real-world execution through practical, work-integrated learning.
+                Built by founders and industry professionals across technology and AI, Vidyavya bridges the gap between theoretical learning and practical, industry-relevant skills through hands-on projects and expert-led learning.
               </p>
               <p>
                 Our programs stay aligned with live industry needs, training learners to work on real systems, and enter the tech industry confident and industry-ready.
@@ -106,7 +106,7 @@ const About = () => {
                       </div>
                     </div>
                     <p className="font-body text-[0.82rem] text-secondary-foreground/80 leading-relaxed">
-                      We empower motivated learners through practical experience and aim to become India’s leading career accelerator for Data and AI, creating engineers who drive the next wave of technological innovation.
+                      We empower ambitious learners with practical, industry-relevant AI skills and aim to become India’s leading career accelerator for AI, creating professionals ready to drive the next wave of technological innovation.
                     </p>
                   </div>
                 </div>
@@ -120,7 +120,7 @@ const About = () => {
                       </div>
                     </div>
                     <p className="font-body text-[0.82rem] text-secondary-foreground/80 leading-relaxed">
-                      We train students in Data Engineering and AI/ML through a work-integrated model where they learn from industry professionals, work on real projects, and graduate confident for modern tech roles.
+                      We empower students and professionals through industry-focused AI programs, practical learning, and expert guidance, helping them build the skills and confidence needed for modern AI careers.
                     </p>
                   </div>
                 </div>
@@ -229,7 +229,7 @@ const About = () => {
               Every class and project is designed to build real skills, discipline, and confidence through execution.
             </p>
             <p>
-              We do not promise shortcuts. We promise honest preparation, real-world exposure, and skills that matter.
+              We do not promise shortcuts. We promise honest preparation, practical learning, and skills that matter
             </p>
             <p className="font-semibold text-secondary-foreground text-lg pt-4">
               You bring the potential.

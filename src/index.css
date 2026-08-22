@@ -151,12 +151,12 @@
 
   /* Testimonial carousel */
   .testimonial-scroll {
-    animation: testimonialScroll 18s linear infinite;
+    animation: testimonialScroll 25s linear infinite;
   }
 
   @media (max-width: 768px) {
     .testimonial-scroll {
-      animation: testimonialScroll 10s linear infinite;
+      animation: testimonialScroll 20s linear infinite;
     }
   }
 
