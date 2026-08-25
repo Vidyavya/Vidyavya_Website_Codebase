@@ -54,7 +54,7 @@ const AIMLEngineering = () => {
         url="https://www.vidyavya.com/programs/ai-ml-engineering"
       />
       {/* Dark + Gradient Premium Hero Section */}
-      <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden bg-[#0A0611] text-white">
+      <section className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-[#0A0611] text-white">
         {/* Abstract background elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/30 rounded-full blur-[100px] opacity-20 md:opacity-50 transform translate-x-1/2 -translate-y-1/2" />
@@ -69,25 +69,25 @@ const AIMLEngineering = () => {
             variants={staggerContainer}
             className="max-w-4xl"
           >
-            <motion.h1 variants={fadeIn} className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8">
+            <motion.h1 variants={fadeIn} className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 md:mb-6">
               AI / ML <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-primary">Engineering</span><br />
               Career Program
             </motion.h1>
             
-            <motion.p variants={fadeIn} className="font-body text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl mb-10">
+            <motion.p variants={fadeIn} className="font-body text-base md:text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl mb-6 md:mb-8">
               Design, train, and deploy production-ready AI systems - going far beyond notebook experimentation into real engineering workflows that deliver models to users at scale.
             </motion.p>
             
-            <motion.div variants={fadeIn} className="flex flex-wrap gap-4 mb-10">
-              <div className="px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center">
+            <motion.div variants={fadeIn} className="flex flex-wrap gap-3 sm:gap-4 mb-2">
+              <div className="px-4 py-2 sm:px-5 sm:py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs sm:text-sm font-semibold flex items-center">
                 <Calendar className="w-4 h-4 mr-2 text-primary" />
                 6 Months · 24 Weeks
               </div>
-              <div className="px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center">
+              <div className="px-4 py-2 sm:px-5 sm:py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs sm:text-sm font-semibold flex items-center">
                 <BrainCircuit className="w-4 h-4 mr-2 text-primary" />
                 End-to-End ML Systems
               </div>
-              <div className="px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center">
+              <div className="px-4 py-2 sm:px-5 sm:py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs sm:text-sm font-semibold flex items-center">
                 <Rocket className="w-4 h-4 mr-2 text-primary" />
                 MLOps & Deployment
               </div>
@@ -99,7 +99,7 @@ const AIMLEngineering = () => {
       </section>
 
       {/* About Section */}
-      <section className="pt-20 pb-8 md:pt-28 md:pb-12 bg-background relative z-10">
+      <section className="pt-12 pb-8 md:pt-16 md:pb-12 bg-background relative z-10">
         <div className="max-w-4xl mx-auto text-center px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

@@ -89,7 +89,7 @@ const Partner = () => {
       />
       <div className="w-full overflow-hidden">
       {/* Hero */}
-      <section className="pt-12 pb-11 md:pt-20 md:pb-16 bg-gradient-to-b from-cream to-background">
+      <section className="py-10 md:py-14 lg:py-16 bg-gradient-to-b from-cream to-background">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -97,10 +97,10 @@ const Partner = () => {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h1 className="font-heading text-[1.7rem] md:text-4xl lg:text-[2.8rem] font-bold text-foreground mb-4">
+            <h1 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.8rem] font-bold text-foreground mb-3 md:mb-4">
               Building the <span className="text-primary">Future, Together</span>
             </h1>
-            <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
+            <p className="font-body text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-2">
               We partner with companies and colleges committed to developing skilled, job-ready tech talent.
             </p>
           </motion.div>
@@ -108,7 +108,7 @@ const Partner = () => {
       </section>
 
       {/* For Companies */}
-      <Section className="pt-8 pb-12 md:pt-16 md:pb-24">
+      <Section className="pt-6 pb-10 md:pt-10 md:pb-16">
         <div className="max-w-3xl mb-10 md:mb-12">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center">

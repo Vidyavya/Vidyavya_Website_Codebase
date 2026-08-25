@@ -125,7 +125,7 @@ const Contact = () => {
         url="https://www.vidyavya.com/contact"
       />
       {/* Hero */}
-      <section className="pt-12 pb-11 md:pt-20 md:pb-16 bg-gradient-to-b from-cream to-background">
+      <section className="py-10 md:py-14 lg:py-16 bg-gradient-to-b from-cream to-background">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -133,19 +133,18 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h1 className="font-heading text-[1.7rem] md:text-4xl lg:text-[2.8rem] font-bold text-foreground mb-4">
+            <h1 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.8rem] font-bold text-foreground mb-3 md:mb-4">
               Let's Start a <span className="text-primary">Conversation</span>
             </h1>
-            <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-              Have questions about our programs? Ready to start your career transformation?
-              <br />
+            <p className="font-body text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-2">
+              Have questions about our programs? Ready to start your career transformation?<br className="hidden sm:inline" />
               Fill out the form and our team will get in touch with you shortly.
             </p>
           </motion.div>
         </div>
       </section>
 
-      <Section className="pt-8">
+      <Section className="pt-4 md:pt-6 pb-12 md:pb-16">
         <div className="grid lg:grid-cols-5 gap-12">
           {/* Contact Form */}
           <motion.div
