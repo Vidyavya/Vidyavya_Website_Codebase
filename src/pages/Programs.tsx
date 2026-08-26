@@ -66,10 +66,10 @@ const Programs = () => {
 
       {/* Two Vertical Cards Layout (Side-by-Side) */}
       <section className="pt-6 pb-14 md:pt-10 md:pb-20 bg-background">
-        <div className="container-custom max-w-6xl mx-auto">
+        <div className="container-custom mx-auto">
 
 
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-10 xl:gap-12">
             
             {/* Card 1 — AI / ML Engineering */}
             <motion.div

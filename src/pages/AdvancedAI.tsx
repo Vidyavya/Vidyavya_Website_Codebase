@@ -261,7 +261,7 @@ const AdvancedAI = () => {
 
       {/* Deep Dive Cards */}
       <section className="bg-slate-50 border-t border-border/50 pt-10 pb-16 md:pt-14 md:pb-24 px-6 md:px-8">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="container-custom mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {[
             { 
               icon: Database, 
@@ -321,7 +321,7 @@ const AdvancedAI = () => {
             hidden: { opacity: 0 },
             visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
           }}
-          className="max-w-6xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6"
+          className="max-w-7xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6"
         >
           {[
             { icon: Code2, title: "Languages & Libraries", p: "Python, NumPy, Pandas, PyTorch", bg: "bg-slate-50 border-slate-100" },
@@ -357,7 +357,7 @@ const AdvancedAI = () => {
           subtitle="Graduates leave with demonstrated, shipped GenAI and agentic systems, not just theoretical knowledge."
         />
         
-        <div className="max-w-6xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 gap-10 lg:gap-16">
+        <div className="max-w-7xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 gap-10 lg:gap-16">
           {[
             { n: "01", t: "Build GenAI Applications End-to-End", d: "Design and ship RAG and LLM-powered applications using real frameworks and production data." },
             { n: "02", t: "Deploy Multi-Agent Systems", d: "Orchestrate, deploy and monitor autonomous agent systems in live environments." },

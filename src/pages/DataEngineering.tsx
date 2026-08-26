@@ -333,7 +333,7 @@ const DataEngineering = () => {
             hidden: { opacity: 0 },
             visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
           }}
-          className="max-w-6xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6"
+          className="max-w-7xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6"
         >
           {[
             { icon: Code2, title: "Languages & Scripting", p: "Python SQL Bash / Shell PySpark", bg: "bg-slate-50 border-slate-100" },
@@ -369,7 +369,7 @@ const DataEngineering = () => {
           subtitle="Graduates leave with demonstrable engineering skills - not just theoretical knowledge, but deployed, production-grade systems they built themselves."
         />
 
-        <div className="max-w-6xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 gap-10 lg:gap-16">
+        <div className="max-w-7xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 gap-10 lg:gap-16">
           {[
             { n: "01", t: "Design Data Pipelines", d: "Architect and build robust ETL/ELT pipelines that move and transform data reliably at scale - from ingestion to analytical layers." },
             { n: "02", t: "Operate Distributed Systems", d: "Work confidently with Apache Spark and Kafka to process large-scale datasets and build real-time data streaming pipelines." },
@@ -396,7 +396,7 @@ const DataEngineering = () => {
 
       {/* Weekly Section */}
       <Section className="bg-[#34495E] text-white overflow-hidden relative border-t-8 border-primary">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
           <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="md:w-1/2">
             
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">

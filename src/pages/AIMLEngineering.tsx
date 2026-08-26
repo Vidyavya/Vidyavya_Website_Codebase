@@ -273,7 +273,7 @@ const AIMLEngineering = () => {
 
       {/* Deep Dive Cards */}
       <section className="bg-slate-50 border-t border-border/50 pt-10 pb-16 md:pt-14 md:pb-24 px-6 md:px-8">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="container-custom mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
             { icon: "🧬", title: "Neural Networks", p: "Architecture fundamentals, backpropagation, activation functions, and training loops built from scratch." },
             { icon: "📷", title: "CNNs", p: "Convolutional Neural Networks for image data - feature extraction, pooling, and classification pipelines." },
@@ -298,55 +298,7 @@ const AIMLEngineering = () => {
       </section>
 
       
-      {/* Capstone & Deliverables Hidden by Request
-      
-      <Section className="bg-gradient-to-br from-[#0F0A1A] to-[#1A050B] text-white relative overflow-hidden">
-        {/* Decor * /}
-        <div className="absolute top-0 right-0 w-full h-full overflow-hidden pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 w-[800px] h-[800px] bg-primary/20 rounded-full blur-[120px] transform -translate-x-1/2 -translate-y-1/2" />
-        </div>
-
-        <div className="container-custom relative z-10">
-          <div className="max-w-3xl mx-auto text-center mb-16 md:mb-24">
-            <motion.span initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true}} className="inline-block font-accent text-sm font-semibold tracking-widest text-[#FF5757] uppercase mb-4">
-              Final Capstone Project
-            </motion.span>
-            <motion.h2 initial={{opacity:0, y:20}} whileInView={{opacity:1, y:0}} viewport={{once:true}} className="font-heading text-4xl md:text-6xl font-bold mb-6">
-              Design & Build a Complete AI System
-            </motion.h2>
-            <motion.p initial={{opacity:0, y:20}} whileInView={{opacity:1, y:0}} viewport={{once:true}} className="font-body text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
-              Students design and build a complete end-to-end AI system - a polished, portfolio-ready deliverable that demonstrates the full ML engineering stack, from raw data to monitored production deployment.
-            </motion.p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <h3 className="font-heading text-xl font-semibold mb-8 text-center text-white/90 uppercase tracking-widest border-b border-white/10 pb-4">Capstone Deliverables</h3>
-            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-              {[
-                "Data preparation and feature engineering pipeline",
-                "Model training, evaluation, and iteration",
-                "API-based production deployment",
-                "Monitoring and observability setup",
-                "Portfolio-ready documentation and presentation"
-              ].map((item, idx) => (
-                <motion.div 
-                  key={idx}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: idx * 0.1 }}
-                  className="w-full md:w-[calc(50%-12px)] flex items-center p-5 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm shadow-xl"
-                >
-                  <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mr-4">
-                    <CheckCircle2 className="w-5 h-5 text-primary" />
-                  </div>
-                  <span className="font-body font-medium leading-relaxed">{item}</span>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </Section> */}
+      {/* Capstone & Deliverables Hidden by Request */}
 
       {/* Tools & Technologies */}
       <Section className="bg-white">
@@ -362,7 +314,7 @@ const AIMLEngineering = () => {
             hidden: { opacity: 0 },
             visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
           }}
-          className="max-w-6xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6"
+          className="max-w-7xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6"
         >
           {[
             { icon: Code2, title: "Languages & Libraries", p: "Python NumPy Pandas scikit-learn", bg: "bg-slate-50 border-slate-100" },
@@ -398,7 +350,7 @@ const AIMLEngineering = () => {
           subtitle="Graduates leave with demonstrated, deployable AI/ML engineering ability - not just theoretical knowledge, but live systems they shipped."
         />
         
-        <div className="max-w-6xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 gap-10 lg:gap-16">
+        <div className="max-w-7xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 gap-10 lg:gap-16">
           {[
             { n: "01", t: "Build ML Systems End-to-End", d: "Train, evaluate, and iterate on machine learning models across regression, classification, and deep learning domains using real frameworks." },
             { n: "02", t: "Deploy to Production", d: "Package and ship models to AWS and Google Cloud as reliable, monitored production APIs using modern MLOps and DevOps practices." },
@@ -425,7 +377,7 @@ const AIMLEngineering = () => {
 
       {/* Weekly Section */}
       <Section className="bg-[#0F0A1A] text-white overflow-hidden relative border-t-8 border-primary">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
           <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once:true }} className="md:w-1/2">
             
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">

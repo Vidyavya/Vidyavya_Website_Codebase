@@ -19,7 +19,7 @@ const HeroSection = () => {
       <GridBackground className="z-0 opacity-40 bottom-0 h-3/4" />
 
       <div className="container-custom relative z-10 my-auto">
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -27,8 +27,8 @@ const HeroSection = () => {
             transition={{ duration: 0.6 }}
           >
             {/* "Transform Your Career" removed as per request */}
-            <h1 className="font-heading text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
-              Shaping Tomorrow’s <br />
+            <h1 className="font-heading text-3xl sm:text-4xl md:text-[2.6rem] lg:text-[3rem] xl:text-[3.25rem] 2xl:text-5xl font-bold text-foreground mb-4 md:mb-6 leading-[1.15]">
+              <span className="whitespace-nowrap">Shaping Tomorrow’s</span> <br />
               <span className="text-primary">Tech Leaders</span>
             </h1>
             <div className="font-body text-sm sm:text-base md:text-lg text-muted-foreground mb-6 md:mb-8 max-w-xl leading-relaxed space-y-2 md:space-y-3">
@@ -66,44 +66,44 @@ const HeroSection = () => {
               <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-accent/50 rounded-full" />
 
               <div className="relative grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2">
-                <div className="flex flex-col gap-2.5 sm:gap-3 p-3.5 sm:p-4 bg-muted rounded-xl">
-                  <div className="w-9 h-9 sm:w-10 sm:h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
-                  </div>
+                <div className="flex flex-col justify-between gap-2.5 sm:gap-3 p-3.5 sm:p-4 bg-muted rounded-xl h-full">
                   <div>
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-2.5">
+                      <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
+                    </div>
                     <p className="font-heading font-semibold text-foreground text-xs sm:text-sm">Founder-Led Curriculum</p>
-                    <p className="font-body text-[11px] sm:text-xs text-muted-foreground mt-0.5 sm:mt-1 leading-relaxed">Designed by tech founders and industry professionals, not academic faculty.</p>
                   </div>
+                  <p className="font-body text-[11px] sm:text-xs text-muted-foreground mt-0.5 sm:mt-1 leading-relaxed">Designed by tech founders and industry professionals, not academic faculty.</p>
                 </div>
 
-                <div className="flex flex-col gap-2.5 sm:gap-3 p-3.5 sm:p-4 bg-muted rounded-xl">
-                  <div className="w-9 h-9 sm:w-10 sm:h-10 bg-accent/50 rounded-lg flex items-center justify-center">
-                    <Brain className="w-4 h-4 sm:w-5 sm:h-5 text-secondary" />
-                  </div>
+                <div className="flex flex-col justify-between gap-2.5 sm:gap-3 p-3.5 sm:p-4 bg-muted rounded-xl h-full">
                   <div>
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 bg-accent/50 rounded-lg flex items-center justify-center mb-2.5">
+                      <Brain className="w-4 h-4 sm:w-5 sm:h-5 text-secondary" />
+                    </div>
                     <p className="font-heading font-semibold text-foreground text-xs sm:text-sm">Advanced AI Learning</p>
-                    <p className="font-body text-[11px] sm:text-xs text-muted-foreground mt-0.5 sm:mt-1 leading-relaxed">Master GenAI, LLMs, RAG, and Agentic AI to engineer the intelligent systems powering tomorrow’s technology.</p>
                   </div>
+                  <p className="font-body text-[11px] sm:text-xs text-muted-foreground mt-0.5 sm:mt-1 leading-relaxed">Master GenAI, LLMs, RAG, and Agentic AI to engineer the intelligent systems powering tomorrow’s technology.</p>
                 </div>
 
-                <div className="flex flex-col gap-2.5 sm:gap-3 p-3.5 sm:p-4 bg-muted rounded-xl">
-                  <div className="w-9 h-9 sm:w-10 sm:h-10 bg-secondary/20 rounded-lg flex items-center justify-center">
-                    <Briefcase className="w-4 h-4 sm:w-5 sm:h-5 text-secondary" />
-                  </div>
+                <div className="flex flex-col justify-between gap-2.5 sm:gap-3 p-3.5 sm:p-4 bg-muted rounded-xl h-full">
                   <div>
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 bg-secondary/20 rounded-lg flex items-center justify-center mb-2.5">
+                      <Briefcase className="w-4 h-4 sm:w-5 sm:h-5 text-secondary" />
+                    </div>
                     <p className="font-heading font-semibold text-foreground text-xs sm:text-sm">Career-Focused Support</p>
-                    <p className="font-body text-[11px] sm:text-xs text-muted-foreground mt-0.5 sm:mt-1 leading-relaxed">Portfolio building, technical interview prep, and guidance to step into tech roles.</p>
                   </div>
+                  <p className="font-body text-[11px] sm:text-xs text-muted-foreground mt-0.5 sm:mt-1 leading-relaxed">Portfolio building, technical interview prep, and guidance to step into tech roles.</p>
                 </div>
 
-                <div className="flex flex-col gap-2.5 sm:gap-3 p-3.5 sm:p-4 bg-muted rounded-xl">
-                  <div className="w-9 h-9 sm:w-10 sm:h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
-                  </div>
+                <div className="flex flex-col justify-between gap-2.5 sm:gap-3 p-3.5 sm:p-4 bg-muted rounded-xl h-full">
                   <div>
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-2.5">
+                      <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
+                    </div>
                     <p className="font-heading font-semibold text-foreground text-xs sm:text-sm">Flexible Upskilling</p>
-                    <p className="font-body text-[11px] sm:text-xs text-muted-foreground mt-0.5 sm:mt-1 leading-relaxed">Structured for students, graduates, and working professionals building for an AI-first world.</p>
                   </div>
+                  <p className="font-body text-[11px] sm:text-xs text-muted-foreground mt-0.5 sm:mt-1 leading-relaxed">Structured for students, graduates, and working professionals building for an AI-first world.</p>
                 </div>
               </div>
             </div>
