@@ -19,19 +19,19 @@ const HeroSection = () => {
       <GridBackground className="z-0 opacity-40 bottom-0 h-3/4" />
 
       <div className="container-custom relative z-10 my-auto">
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-10 lg:gap-14 xl:gap-16 items-center">
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            {/* "Transform Your Career" removed as per request */}
-            <h1 className="font-heading text-3xl sm:text-4xl md:text-[2.6rem] lg:text-[3rem] xl:text-[3.25rem] 2xl:text-5xl font-bold text-foreground mb-4 md:mb-6 leading-[1.15]">
+            {/* Headline with clean line separation and proper line-height */}
+            <h1 className="font-heading text-4xl sm:text-5xl lg:text-[3.4rem] xl:text-[3.75rem] font-bold text-foreground mb-6 leading-[1.15] tracking-tight">
               <span className="whitespace-nowrap">Shaping Tomorrow’s</span> <br />
               <span className="text-primary">Tech Leaders</span>
             </h1>
-            <div className="font-body text-sm sm:text-base md:text-lg text-muted-foreground mb-6 md:mb-8 max-w-xl leading-relaxed space-y-2 md:space-y-3">
+            <div className="font-body text-base sm:text-lg lg:text-xl text-muted-foreground mb-8 max-w-xl leading-relaxed space-y-3">
               <p>
                 Industry-focused AI training combined with practical projects and career support.
               </p>
@@ -40,12 +40,12 @@ const HeroSection = () => {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-4 md:mb-0">
-              <Button variant="hero" size="xl" onClick={openModal}>
+            <div className="flex flex-col sm:flex-row gap-4 mb-4 md:mb-0">
+              <Button variant="hero" size="xl" className="text-base sm:text-lg px-7 py-6" onClick={openModal}>
                 Request Callback
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
-              <Button variant="ctaOutline" size="xl" asChild>
+              <Button variant="ctaOutline" size="xl" className="text-base sm:text-lg px-7 py-6" asChild>
                 <Link to="/programs">Explore Programs</Link>
               </Button>
             </div>
@@ -60,50 +60,50 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative bg-card rounded-2xl shadow-xl p-4 sm:p-5 md:p-6 lg:p-7">
+            <div className="relative bg-card rounded-3xl shadow-xl p-6 sm:p-7 md:p-8 lg:p-9 border border-border/40">
               {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/10 rounded-full" />
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-accent/50 rounded-full" />
+              <div className="absolute -top-4 -right-4 w-28 h-28 bg-primary/10 rounded-full" />
+              <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-accent/50 rounded-full" />
 
-              <div className="relative grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2">
-                <div className="flex flex-col justify-between gap-2.5 sm:gap-3 p-3.5 sm:p-4 bg-muted rounded-xl h-full">
+              <div className="relative grid gap-4 sm:gap-5 md:gap-6 grid-cols-1 sm:grid-cols-2">
+                <div className="flex flex-col justify-between gap-3 p-4 sm:p-5 bg-muted/70 hover:bg-muted rounded-2xl h-full transition-colors">
                   <div>
-                    <div className="w-9 h-9 sm:w-10 sm:h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-2.5">
-                      <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
+                    <div className="w-11 h-11 sm:w-12 sm:h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
+                      <GraduationCap className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                     </div>
-                    <p className="font-heading font-semibold text-foreground text-xs sm:text-sm">Founder-Led Curriculum</p>
+                    <p className="font-heading font-semibold text-foreground text-sm sm:text-base">Founder-Led Curriculum</p>
                   </div>
-                  <p className="font-body text-[11px] sm:text-xs text-muted-foreground mt-0.5 sm:mt-1 leading-relaxed">Designed by tech founders and industry professionals, not academic faculty.</p>
+                  <p className="font-body text-xs sm:text-sm text-muted-foreground mt-1 leading-relaxed">Designed by tech founders and industry professionals, not academic faculty.</p>
                 </div>
 
-                <div className="flex flex-col justify-between gap-2.5 sm:gap-3 p-3.5 sm:p-4 bg-muted rounded-xl h-full">
+                <div className="flex flex-col justify-between gap-3 p-4 sm:p-5 bg-muted/70 hover:bg-muted rounded-2xl h-full transition-colors">
                   <div>
-                    <div className="w-9 h-9 sm:w-10 sm:h-10 bg-accent/50 rounded-lg flex items-center justify-center mb-2.5">
-                      <Brain className="w-4 h-4 sm:w-5 sm:h-5 text-secondary" />
+                    <div className="w-11 h-11 sm:w-12 sm:h-12 bg-accent/50 rounded-xl flex items-center justify-center mb-3">
+                      <Brain className="w-5 h-5 sm:w-6 sm:h-6 text-secondary" />
                     </div>
-                    <p className="font-heading font-semibold text-foreground text-xs sm:text-sm">Advanced AI Learning</p>
+                    <p className="font-heading font-semibold text-foreground text-sm sm:text-base">Advanced AI Learning</p>
                   </div>
-                  <p className="font-body text-[11px] sm:text-xs text-muted-foreground mt-0.5 sm:mt-1 leading-relaxed">Master GenAI, LLMs, RAG, and Agentic AI to engineer the intelligent systems powering tomorrow’s technology.</p>
+                  <p className="font-body text-xs sm:text-sm text-muted-foreground mt-1 leading-relaxed">Master GenAI, LLMs, RAG, and Agentic AI to engineer the intelligent systems powering tomorrow’s technology.</p>
                 </div>
 
-                <div className="flex flex-col justify-between gap-2.5 sm:gap-3 p-3.5 sm:p-4 bg-muted rounded-xl h-full">
+                <div className="flex flex-col justify-between gap-3 p-4 sm:p-5 bg-muted/70 hover:bg-muted rounded-2xl h-full transition-colors">
                   <div>
-                    <div className="w-9 h-9 sm:w-10 sm:h-10 bg-secondary/20 rounded-lg flex items-center justify-center mb-2.5">
-                      <Briefcase className="w-4 h-4 sm:w-5 sm:h-5 text-secondary" />
+                    <div className="w-11 h-11 sm:w-12 sm:h-12 bg-secondary/20 rounded-xl flex items-center justify-center mb-3">
+                      <Briefcase className="w-5 h-5 sm:w-6 sm:h-6 text-secondary" />
                     </div>
-                    <p className="font-heading font-semibold text-foreground text-xs sm:text-sm">Career-Focused Support</p>
+                    <p className="font-heading font-semibold text-foreground text-sm sm:text-base">Career-Focused Support</p>
                   </div>
-                  <p className="font-body text-[11px] sm:text-xs text-muted-foreground mt-0.5 sm:mt-1 leading-relaxed">Portfolio building, technical interview prep, and guidance to step into tech roles.</p>
+                  <p className="font-body text-xs sm:text-sm text-muted-foreground mt-1 leading-relaxed">Portfolio building, technical interview prep, and guidance to step into tech roles.</p>
                 </div>
 
-                <div className="flex flex-col justify-between gap-2.5 sm:gap-3 p-3.5 sm:p-4 bg-muted rounded-xl h-full">
+                <div className="flex flex-col justify-between gap-3 p-4 sm:p-5 bg-muted/70 hover:bg-muted rounded-2xl h-full transition-colors">
                   <div>
-                    <div className="w-9 h-9 sm:w-10 sm:h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-2.5">
-                      <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
+                    <div className="w-11 h-11 sm:w-12 sm:h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
+                      <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                     </div>
-                    <p className="font-heading font-semibold text-foreground text-xs sm:text-sm">Flexible Upskilling</p>
+                    <p className="font-heading font-semibold text-foreground text-sm sm:text-base">Flexible Upskilling</p>
                   </div>
-                  <p className="font-body text-[11px] sm:text-xs text-muted-foreground mt-0.5 sm:mt-1 leading-relaxed">Structured for students, graduates, and working professionals building for an AI-first world.</p>
+                  <p className="font-body text-xs sm:text-sm text-muted-foreground mt-1 leading-relaxed">Structured for students, graduates, and working professionals building for an AI-first world.</p>
                 </div>
               </div>
             </div>
