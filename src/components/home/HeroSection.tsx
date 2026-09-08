@@ -27,9 +27,9 @@ const HeroSection = () => {
             transition={{ duration: 0.6 }}
           >
             {/* Headline with clean line separation and proper line-height */}
-            <h1 className="font-heading text-4xl sm:text-5xl lg:text-[3.4rem] xl:text-[3.75rem] font-bold text-foreground mb-6 leading-[1.15] tracking-tight">
-              <span className="whitespace-nowrap">Shaping Tomorrow’s</span> <br />
-              <span className="text-primary">Tech Leaders</span>
+            <h1 className="font-heading text-3xl sm:text-4xl lg:text-[2.6rem] xl:text-[2.9rem] font-bold text-foreground mb-6 leading-tight tracking-tight">
+              <span className="block whitespace-nowrap">Shaping Tomorrow’s</span>
+              <span className="block text-primary">Tech Leaders</span>
             </h1>
             <div className="font-body text-base sm:text-lg lg:text-xl text-muted-foreground mb-8 max-w-xl leading-relaxed space-y-3">
               <p>
