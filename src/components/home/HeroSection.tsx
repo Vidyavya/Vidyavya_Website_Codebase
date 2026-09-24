@@ -33,7 +33,7 @@ const HeroSection = () => {
             </h1>
             <div className="font-body text-base md:text-lg text-muted-foreground mb-8 max-w-xl leading-relaxed space-y-3">
               <p>
-                Industry-focused AI training combined with practical projects and career support.
+                Industry-focused AI/ML training combined with corporate internship experience and career support
               </p>
               <p>
                 Go beyond theory with hands-on projects, expert mentorship, and career preparation.
@@ -66,43 +66,43 @@ const HeroSection = () => {
               <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-accent/50 rounded-full" />
 
               <div className="relative grid gap-4 grid-cols-1 sm:grid-cols-2">
-                <div className="flex flex-col gap-3 p-4 bg-muted rounded-xl">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                <div className="flex flex-col gap-3 p-4 bg-muted rounded-xl h-full">
+                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                     <GraduationCap className="w-5 h-5 text-primary" />
                   </div>
-                  <div>
+                  <div className="flex-1 flex flex-col">
                     <p className="font-heading font-semibold text-foreground text-sm">Founder-Led Curriculum</p>
-                    <p className="font-body text-xs text-muted-foreground mt-1">Designed by tech founders and industry professionals, not academic faculty.</p>
+                    <p className="font-body text-xs text-muted-foreground mt-1 leading-relaxed">Designed by tech founders and industry professionals, not academic faculty.</p>
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-3 p-4 bg-muted rounded-xl">
-                  <div className="w-10 h-10 bg-accent/50 rounded-lg flex items-center justify-center">
+                <div className="flex flex-col gap-3 p-4 bg-muted rounded-xl h-full">
+                  <div className="w-10 h-10 bg-accent/50 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Brain className="w-5 h-5 text-secondary" />
                   </div>
-                  <div>
+                  <div className="flex-1 flex flex-col">
                     <p className="font-heading font-semibold text-foreground text-sm">Advanced AI Learning</p>
-                    <p className="font-body text-xs text-muted-foreground mt-1">Master GenAI, LLMs, RAG, and Agentic AI to engineer the intelligent systems powering tomorrow’s technology.</p>
+                    <p className="font-body text-xs text-muted-foreground mt-1 leading-relaxed">Master GenAI, LLMs, RAG, and Agentic AI to engineer intelligent systems powering tomorrow’s technology.</p>
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-3 p-4 bg-muted rounded-xl">
-                  <div className="w-10 h-10 bg-secondary/20 rounded-lg flex items-center justify-center">
+                <div className="flex flex-col gap-3 p-4 bg-muted rounded-xl h-full">
+                  <div className="w-10 h-10 bg-secondary/20 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Briefcase className="w-5 h-5 text-secondary" />
                   </div>
-                  <div>
-                    <p className="font-heading font-semibold text-foreground text-sm">Career-Focused Support</p>
-                    <p className="font-body text-xs text-muted-foreground mt-1">Portfolio building, technical interview prep, and guidance to step into tech roles.</p>
+                  <div className="flex-1 flex flex-col">
+                    <p className="font-heading font-semibold text-foreground text-sm">Industry Internship</p>
+                    <p className="font-body text-xs text-muted-foreground mt-1 leading-relaxed">Take your learning into a partnered company through a structured internship and real team workflows.</p>
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-3 p-4 bg-muted rounded-xl">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                <div className="flex flex-col gap-3 p-4 bg-muted rounded-xl h-full">
+                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Zap className="w-5 h-5 text-primary" />
                   </div>
-                  <div>
+                  <div className="flex-1 flex flex-col">
                     <p className="font-heading font-semibold text-foreground text-sm">Flexible Upskilling</p>
-                    <p className="font-body text-xs text-muted-foreground mt-1">Structured for students, graduates, and working professionals building for an AI-first world.</p>
+                    <p className="font-body text-xs text-muted-foreground mt-1 leading-relaxed">Structured for students, graduates, and working professionals building for an AI-first world.</p>
                   </div>
                 </div>
               </div>

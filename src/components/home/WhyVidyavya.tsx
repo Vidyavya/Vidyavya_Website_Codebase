@@ -37,9 +37,9 @@ const features = [
     description: 'Apply your learning through practical projects based on real-world AI use cases.',
   },
   {
-    icon: FileCheck,
-    title: 'Industry Certification',
-    description: 'Earn a certificate that recognizes your skills and successful completion of the program.',
+    icon: Briefcase,
+    title: 'Corporate Internship',
+    description: 'Step into a real corporate environment, work on industry projects, and gain experience that goes beyond the classroom',
   },
 ];
 
@@ -49,7 +49,7 @@ const WhyVidyavya = () => {
       <SectionHeader
         label="Why Choose Vidyavya?"
         title="Built for the Future of AI"
-        subtitle="Vidyavya combines industry-led learning, practical application, and career-focused support to help students and professionals build relevant AI skills and confidently take their next career step."
+        subtitle="Vidyavya brings together founder-led AI/ML training, modern technology, and real corporate internship experience to prepare future AI professionals beyond the classroom"
       />
 
       <div className="relative overflow-hidden mb-12 py-4">

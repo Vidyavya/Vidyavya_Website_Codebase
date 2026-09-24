@@ -88,7 +88,10 @@
     @apply border-border;
   }
 
-  html {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
     scroll-behavior: smooth;
   }
 

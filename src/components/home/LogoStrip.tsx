@@ -5,8 +5,37 @@ const LogoStrip = () => {
     '/company-logos/1.png',
     '/company-logos/meta flow ai logo-edited.png',
     '/company-logos/yukoso logo-edited.png',
-    '/company-logos/5.png'
+    '/company-logos/5.png',
+    '/company-logos/unifolio.png'
   ];
+
+  const renderLogoSet = (keyPrefix: string) => (
+    <div className="flex gap-6 md:gap-12 items-center px-3 md:px-6">
+      {logos.map((src, index) => {
+        const isUnifolio = src.includes('unifolio');
+        const isMetaflow = src.includes('meta flow');
+
+        // Optical max-height so logos feel balanced in vertical scale
+        let maxHClass = "max-h-16 md:max-h-20";
+        if (isUnifolio) maxHClass = "max-h-9 md:max-h-11";
+        if (isMetaflow) maxHClass = "max-h-14 md:max-h-18";
+
+        return (
+          <div
+            key={`${keyPrefix}-${index}`}
+            className="flex-shrink-0 w-48 md:w-60 h-24 md:h-28 flex items-center justify-center"
+          >
+            <img
+              src={src}
+              alt={`Company logo ${index + 1}`}
+              loading="lazy"
+              className={`${maxHClass} max-w-full object-contain opacity-75 hover:opacity-100 hover:scale-110 hover:-translate-y-1 hover:drop-shadow-lg transition-all duration-300`}
+            />
+          </div>
+        );
+      })}
+    </div>
+  );
 
   return (
     <div className="py-4 bg-card border-y border-border overflow-hidden">
@@ -17,48 +46,8 @@ const LogoStrip = () => {
       </div>
       <div className="relative overflow-hidden py-0">
         <div className="flex testimonial-scroll w-max">
-          {/* First set of logos */}
-          <div className="flex gap-4 md:gap-8 items-center px-6">
-            {logos.map((src, index) => {
-              // Normalized logo sizing for optical balance
-              const imgSizeClass = "h-32 md:h-36 w-64 md:w-72";
-
-              return (
-                <div
-                  key={`logo-img-1-${index}`}
-                  className="flex-shrink-0 h-44 md:h-52 w-80 md:w-96 flex items-center justify-center p-0 transition-transform"
-                >
-                  <img
-                    src={src}
-                    alt={`Company logo ${index + 1}`}
-                    loading="lazy"
-                    className={`${imgSizeClass} object-contain opacity-70 hover:opacity-100 hover:scale-110 hover:-translate-y-1 hover:drop-shadow-lg transition-all duration-300`}
-                  />
-                </div>
-              );
-            })}
-          </div>
-          {/* Duplicate for seamless loop */}
-          <div className="flex gap-4 md:gap-8 items-center px-6">
-            {logos.map((src, index) => {
-              // Normalized logo sizing for optical balance
-              const imgSizeClass = "h-32 md:h-36 w-64 md:w-72";
-
-              return (
-                <div
-                  key={`logo-img-2-${index}`}
-                  className="flex-shrink-0 h-44 md:h-52 w-80 md:w-96 flex items-center justify-center p-0 transition-transform"
-                >
-                  <img
-                    src={src}
-                    alt={`Company logo ${index + 1}`}
-                    loading="lazy"
-                    className={`${imgSizeClass} object-contain opacity-70 hover:opacity-100 hover:scale-110 hover:-translate-y-1 hover:drop-shadow-lg transition-all duration-300`}
-                  />
-                </div>
-              );
-            })}
-          </div>
+          {renderLogoSet('logo-set-1')}
+          {renderLogoSet('logo-set-2')}
         </div>
       </div>
     </div>
