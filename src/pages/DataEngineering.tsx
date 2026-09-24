@@ -50,7 +50,7 @@ const DataEngineering = () => {
         url="https://www.vidyavya.com/programs/data-engineering"
       />
       {/* Dark + Gradient Premium Hero Section */}
-      <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden bg-[#0A1628] text-white">
+      <section className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-[#0A1628] text-white">
         {/* Abstract background elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[100px] opacity-20 md:opacity-50 transform translate-x-1/2 -translate-y-1/2" />
@@ -65,25 +65,25 @@ const DataEngineering = () => {
             variants={staggerContainer}
             className="max-w-4xl"
           >
-            <motion.h1 variants={fadeIn} className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8">
+            <motion.h1 variants={fadeIn} className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 md:mb-6">
               Data <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#A8D8EA]">Engineering</span><br />
               Career Program
             </motion.h1>
 
-            <motion.p variants={fadeIn} className="font-body text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl mb-10">
+            <motion.p variants={fadeIn} className="font-body text-base md:text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl mb-6 md:mb-8">
               Build the modern data platforms, pipelines, and analytics infrastructure that power today's technology companies - from e-commerce to fintech and beyond.
             </motion.p>
 
-            <motion.div variants={fadeIn} className="flex flex-wrap gap-4 mb-10">
-              <div className="px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center">
+            <motion.div variants={fadeIn} className="flex flex-wrap gap-3 sm:gap-4 mb-2">
+              <div className="px-4 py-2 sm:px-5 sm:py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs sm:text-sm font-semibold flex items-center">
                 <Calendar className="w-4 h-4 mr-2 text-[#A8D8EA]" />
                 6 Months · 24 Weeks
               </div>
-              <div className="px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center">
+              <div className="px-4 py-2 sm:px-5 sm:py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs sm:text-sm font-semibold flex items-center">
                 <Hammer className="w-4 h-4 mr-2 text-[#A8D8EA]" />
                 Hands-On Projects
               </div>
-              <div className="px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center">
+              <div className="px-4 py-2 sm:px-5 sm:py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs sm:text-sm font-semibold flex items-center">
                 <Target className="w-4 h-4 mr-2 text-[#A8D8EA]" />
                 Career Readiness
               </div>
@@ -95,7 +95,7 @@ const DataEngineering = () => {
       </section>
 
       {/* About Section */}
-      <section className="pt-20 pb-8 md:pt-28 md:pb-12 bg-background relative z-10">
+      <section className="pt-12 pb-8 md:pt-16 md:pb-12 bg-background relative z-10">
         <div className="max-w-4xl mx-auto text-center px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -333,7 +333,7 @@ const DataEngineering = () => {
             hidden: { opacity: 0 },
             visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
           }}
-          className="max-w-6xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6"
+          className="max-w-7xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6"
         >
           {[
             { icon: Code2, title: "Languages & Scripting", p: "Python SQL Bash / Shell PySpark", bg: "bg-slate-50 border-slate-100" },
@@ -369,7 +369,7 @@ const DataEngineering = () => {
           subtitle="Graduates leave with demonstrable engineering skills - not just theoretical knowledge, but deployed, production-grade systems they built themselves."
         />
 
-        <div className="max-w-6xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 gap-10 lg:gap-16">
+        <div className="max-w-7xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 gap-10 lg:gap-16">
           {[
             { n: "01", t: "Design Data Pipelines", d: "Architect and build robust ETL/ELT pipelines that move and transform data reliably at scale - from ingestion to analytical layers." },
             { n: "02", t: "Operate Distributed Systems", d: "Work confidently with Apache Spark and Kafka to process large-scale datasets and build real-time data streaming pipelines." },
@@ -396,7 +396,7 @@ const DataEngineering = () => {
 
       {/* Weekly Section */}
       <Section className="bg-[#34495E] text-white overflow-hidden relative border-t-8 border-primary">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
           <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="md:w-1/2">
             
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">

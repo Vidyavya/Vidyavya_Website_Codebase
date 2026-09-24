@@ -26,7 +26,7 @@ const StudentLife = () => {
         url="https://www.vidyavya.com/student-life"
       />
       {/* Hero */}
-      <section className="pt-12 pb-11 md:pt-20 md:pb-16 bg-gradient-to-b from-cream to-background border-b border-border/50">
+      <section className="py-10 md:py-14 lg:py-16 bg-gradient-to-b from-cream to-background border-b border-border/50">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -34,10 +34,10 @@ const StudentLife = () => {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h1 className="font-heading text-[1.7rem] md:text-4xl lg:text-[2.8rem] font-bold text-foreground mb-4">
+            <h1 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.8rem] font-bold text-foreground mb-3 md:mb-4">
               Where Learning <span className="text-primary">Meets Growth</span>
             </h1>
-            <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
+            <p className="font-body text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-2">
               Experience a transformative journey at Vidyavya where every day brings new challenges,
               mentorship, and opportunities to grow into an industry-ready professional.
             </p>

@@ -47,7 +47,7 @@ const AdvancedAI = () => {
         url="https://www.vidyavya.com/programs/advanced-ai"
       />
       {/* Dark + Gradient Premium Hero Section */}
-      <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden bg-[#0A0611] text-white">
+      <section className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-[#0A0611] text-white">
         {/* Abstract background elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#34495E]/40 rounded-full blur-[100px] opacity-30 md:opacity-60 transform translate-x-1/2 -translate-y-1/2" />
@@ -62,25 +62,25 @@ const AdvancedAI = () => {
             variants={staggerContainer}
             className="max-w-4xl"
           >
-            <motion.h1 variants={fadeIn} className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8">
+            <motion.h1 variants={fadeIn} className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 md:mb-6">
               Advanced <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-primary">AI</span><br />
               Career Program
             </motion.h1>
             
-            <motion.p variants={fadeIn} className="font-body text-lg md:text-xl text-slate-300 leading-relaxed max-w-3xl mb-10">
+            <motion.p variants={fadeIn} className="font-body text-base md:text-lg lg:text-xl text-slate-300 leading-relaxed max-w-3xl mb-6 md:mb-8">
               Go beyond the fundamentals: master modern GenAI, LLM engineering, and agentic AI systems, and learn to design, ship, and govern AI products that operate autonomously in the real world.
             </motion.p>
             
-            <motion.div variants={fadeIn} className="flex flex-wrap gap-4 mb-10">
-              <div className="px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center">
+            <motion.div variants={fadeIn} className="flex flex-wrap gap-3 sm:gap-4 mb-2">
+              <div className="px-4 py-2 sm:px-5 sm:py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs sm:text-sm font-semibold flex items-center">
                 <Calendar className="w-4 h-4 mr-2 text-primary" />
                 3 Months · 12 Weeks
               </div>
-              <div className="px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center">
+              <div className="px-4 py-2 sm:px-5 sm:py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs sm:text-sm font-semibold flex items-center">
                 <Sparkles className="w-4 h-4 mr-2 text-primary" />
                 GenAI & LLM Engineering
               </div>
-              <div className="px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold flex items-center">
+              <div className="px-4 py-2 sm:px-5 sm:py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs sm:text-sm font-semibold flex items-center">
                 <Bot className="w-4 h-4 mr-2 text-primary" />
                 Agentic AI Systems
               </div>
@@ -90,7 +90,7 @@ const AdvancedAI = () => {
       </section>
 
       {/* About Section */}
-      <section className="pt-20 pb-8 md:pt-28 md:pb-12 bg-background relative z-10">
+      <section className="pt-12 pb-8 md:pt-16 md:pb-12 bg-background relative z-10">
         <div className="max-w-4xl mx-auto text-center px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -261,7 +261,7 @@ const AdvancedAI = () => {
 
       {/* Deep Dive Cards */}
       <section className="bg-slate-50 border-t border-border/50 pt-10 pb-16 md:pt-14 md:pb-24 px-6 md:px-8">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="container-custom mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {[
             { 
               icon: Database, 
@@ -321,7 +321,7 @@ const AdvancedAI = () => {
             hidden: { opacity: 0 },
             visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
           }}
-          className="max-w-6xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6"
+          className="max-w-7xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6"
         >
           {[
             { icon: Code2, title: "Languages & Libraries", p: "Python, NumPy, Pandas, PyTorch", bg: "bg-slate-50 border-slate-100" },
@@ -357,7 +357,7 @@ const AdvancedAI = () => {
           subtitle="Graduates leave with demonstrated, shipped GenAI and agentic systems, not just theoretical knowledge."
         />
         
-        <div className="max-w-6xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 gap-10 lg:gap-16">
+        <div className="max-w-7xl mx-auto mt-16 md:mt-24 grid md:grid-cols-2 gap-10 lg:gap-16">
           {[
             { n: "01", t: "Build GenAI Applications End-to-End", d: "Design and ship RAG and LLM-powered applications using real frameworks and production data." },
             { n: "02", t: "Deploy Multi-Agent Systems", d: "Orchestrate, deploy and monitor autonomous agent systems in live environments." },
