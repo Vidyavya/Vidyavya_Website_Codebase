@@ -13,8 +13,8 @@ const modelSteps = [
   },
   {
     step: '02',
-    title: 'Apply',
-    description: 'Apply what you learn through practical projects and real-world AI use cases.',
+    title: 'Intern',
+    description: 'Take your skills into a real corporate environment through a partnered industry internship and work on real-world projects.',
   },
   {
     step: '03',
@@ -63,7 +63,7 @@ const About = () => {
               Redefining How <span className="text-primary">Tech Careers Are Built</span>
             </h1>
             <p className="font-body text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-2">
-              Vidyavya was created by founders running technology companies to bridge the gap between academic learning and real industry needs.
+              Vidyavya was created by technology founders to bridge the gap between academic theory and real-world corporate experience
             </p>
           </motion.div>
         </div>
@@ -84,10 +84,10 @@ const About = () => {
                 Vidyavya was created to solve a simple problem. Engineering education produces degree holders, not industry-ready professionals.
               </p>
               <p>
-                Built by founders and industry professionals across technology and AI, Vidyavya bridges the gap between theoretical learning and practical, industry-relevant skills through hands-on projects and expert-led learning.
+                Built by technology founders and industry professionals, Vidyavya combines intensive AI/ML training with real corporate internship experience, helping learners move beyond the traditional classroom and into the world of work
               </p>
               <p>
-                Our programs stay aligned with live industry needs, training learners to work on real systems, and enter the tech industry confident and industry-ready.
+                Our six-month journey is designed around what comes next - building a strong technical foundation, experiencing real industry environments, working on real projects, and developing the confidence to step into the AI industry.
               </p>
             </div>
           </div>

@@ -14,11 +14,11 @@ const faqData = [
     faqs: [
       {
         question: "What makes Vidyavya different from other training institutes?",
-        answer: "Vidyavya focuses on practical, industry-relevant AI skills rather than theory alone. Learners work on hands-on projects, learn modern tools and technologies, receive guidance from industry professionals, and get career support to build relevant, job-ready skills."
+        answer: "Vidyavya goes beyond traditional training by combining a founder-led AI/ML curriculum with real corporate internship experience, giving learners the technical foundation, industry exposure, and career support needed to move from learning AI to experiencing it in the real world."
       },
       {
         question: "Which programs does Vidyavya offer?",
-        answer: "Currently, Vidyavya offers two specialized programs: AI/ML Engineering and Advanced AI. The AI/ML Engineering program builds strong foundations in machine learning and AI, while Advanced AI focuses on GenAI, LLMs, RAG, Agentic AI, and production-ready AI systems."
+        answer: "Vidyavya currently offers a 6-month AI/ML Engineering Program combining 3 months of intensive training with 3 months of corporate internship experience at a partnered company, helping learners build strong AI/ML foundations and gain real industry exposure."
       },
       {
         question: "Who are these programs designed for?",

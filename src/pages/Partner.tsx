@@ -60,7 +60,7 @@ const collegeProcess = [
   {
     step: '02',
     title: 'Hands-on Training',
-    description: 'Students receive hands-on training through guided projects.',
+    description: 'Students receive hands-on training through real-world projects.',
   },
   {
     step: '03',

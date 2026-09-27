@@ -112,10 +112,10 @@ const AIMLEngineering = () => {
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-12 h-1 bg-primary/40 rounded-full" />
             </span>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6">
-              From Model Notebooks to Production AI
+              From AI Theory to Real-World Impact
             </h2>
             <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto text-center text-balance">
-              The Vidyavya AI/ML Engineering Career Program is a 6-month intensive built around the full lifecycle of machine learning - from data preparation and model training to cloud deployment and production monitoring. Students graduate having deployed real AI systems, making them genuinely job-ready in one of the highest-demand fields in technology.
+              The Vidyavya AI/ML Engineering Program is a 6-month journey designed to take learners from strong AI/ML foundations to real industry experience, combining 3 months of intensive training with 3 months of corporate internship at a partnered company.
             </p>
           </motion.div>
         </div>
@@ -163,7 +163,7 @@ const AIMLEngineering = () => {
       <Section className="bg-background">
         <SectionHeader 
           label="Curriculum"
-          title="Six Months. Six Engineering Milestones."
+          title="Three Months. Engineering Milestones."
           subtitle="Each month builds systematically - from Python and data mastery to building and shipping complete AI systems at scale."
           subtitleClassName="text-center text-balance"
         />
@@ -355,7 +355,7 @@ const AIMLEngineering = () => {
             { n: "01", t: "Build ML Systems End-to-End", d: "Train, evaluate, and iterate on machine learning models across regression, classification, and deep learning domains using real frameworks." },
             { n: "02", t: "Deploy to Production", d: "Package and ship models to AWS and Google Cloud as reliable, monitored production APIs using modern MLOps and DevOps practices." },
             { n: "03", t: "Build Applied AI Applications", d: "Design and build NLP pipelines, recommendation systems, computer vision apps, and LLM-powered tools that solve real user problems." },
-            { n: "04", t: "Ship Real-World AI Products", d: "Solve complex business problems by converting raw data into intelligent, production-grade systems that deliver measurable value." }
+            { n: "04", t: "Gain Industry Experience", d: "Graduate with 3 months of corporate internship experience, real-world project exposure, and a stronger resume for your AI/ML career" }
           ].map((item, idx) => (
             <motion.div 
               key={idx}
