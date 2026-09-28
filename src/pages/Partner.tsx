@@ -45,7 +45,7 @@ const companyProcess = [
 ];
 
 const collegeBenefits = [
-  'Industry-aligned training across AI/ML Engineering and Advanced AI',
+  'Industry-aligned training in AI/ML Engineering',
   'Hands-on, project-based learning beyond traditional classrooms',
   'Improved placement performance and employer confidence',
   'Strong industry connect for students and institutions',
@@ -84,7 +84,7 @@ const Partner = () => {
     <Layout>
       <SEO 
         title="Partner With Us | Vidyavya"
-        description="Partner with Vidyavya to bridge the gap between academia and industry. We work with companies and colleges to build job-ready tech talent."
+        description="Partner with Vidyavya to bridge the gap between academia and industry. Hire job-ready AI/ML engineering talent or integrate industry training into your college."
         url="https://www.vidyavya.com/partner"
       />
       <div className="w-full overflow-hidden">

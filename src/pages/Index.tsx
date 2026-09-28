@@ -10,10 +10,10 @@ const Index = () => {
   return (
     <Layout>
       <SEO 
-        title="Vidyavya | AI/ML & Advanced AI Career Programs"
-        description="Vidyavya offers specialized AI/ML Engineering and Advanced AI programs focused on hands-on projects, modern AI capabilities, and career readiness."
+        title="Vidyavya | AI/ML Engineering Career Program"
+        description="Vidyavya offers an industry-focused 6-month AI/ML Engineering program combining intensive practical training, 3 months corporate internship, and dedicated career support."
         url="https://www.vidyavya.com/"
-        image="https://www.vidyavya.com/og-image.png"
+        image="https://www.vidyavya.com/logo.png"
       />
       <HeroSection />
       <WhyVidyavya />

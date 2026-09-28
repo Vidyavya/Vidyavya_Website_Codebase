@@ -121,7 +121,7 @@ const Contact = () => {
     <Layout>
       <SEO 
         title="Contact Us | Vidyavya"
-        description="Get in touch with Vidyavya for any queries regarding our AI/ML Engineering and Advanced AI programs."
+        description="Get in touch with Vidyavya for any queries regarding our AI/ML Engineering Program, admissions, syllabus, and placement support."
         url="https://www.vidyavya.com/contact"
       />
       {/* Hero */}

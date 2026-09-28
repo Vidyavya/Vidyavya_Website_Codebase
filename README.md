@@ -1,6 +1,6 @@
 # Vidyavya — Career Launch
 
-Accelerate your tech career with Vidyavya. Industry-led 6-month career engineering programs in Data Engineering and AI/ML.
+Accelerate your tech career with Vidyavya. Industry-led 6-month career engineering program in AI/ML.
 
 ## Overview
 

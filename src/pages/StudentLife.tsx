@@ -264,7 +264,7 @@ const StudentLife = () => {
               {
                 week: 'Phase 5',
                 title: 'Step into the Industry',
-                description: 'Graduate as a confident, industry-ready professional prepared for roles in Data Engineering, AI/ML, and beyond.',
+                description: 'Graduate as a confident, industry-ready professional prepared for roles in AI/ML Engineering and beyond.',
               }
             ].map((step, index) => (
               <motion.div

@@ -36,8 +36,8 @@ const Programs = () => {
   return (
     <Layout>
       <SEO 
-        title="Programs | Vidyavya"
-        description="Explore Vidyavya's AI/ML Engineering program built around hands-on projects, corporate internship experience, and practical AI capabilities."
+        title="AI/ML Engineering Program | Vidyavya"
+        description="Explore Vidyavya's flagship 6-month AI/ML Engineering Program: 3 months intensive training plus 3 months corporate internship with real-world AI deployment."
         url="https://www.vidyavya.com/programs"
       />
       {/* Hero */}

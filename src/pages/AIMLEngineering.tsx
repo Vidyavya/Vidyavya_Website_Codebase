@@ -49,8 +49,8 @@ const AIMLEngineering = () => {
   return (
     <Layout>
       <SEO 
-        title="AI/ML Engineering Program | Vidyavya"
-        description="Master AI and ML engineering at Vidyavya through hands-on learning, live projects, and expert mentorship in Pune."
+        title="AI/ML Engineering Career Program | Vidyavya"
+        description="Master AI and ML engineering with Vidyavya's 6-month program: 3 months intensive training, 6 engineering milestones, 3 months corporate internship, and placement support."
         url="https://www.vidyavya.com/programs/ai-ml-engineering"
       />
       {/* Dark + Gradient Premium Hero Section */}
@@ -163,7 +163,7 @@ const AIMLEngineering = () => {
       <Section className="bg-background">
         <SectionHeader 
           label="Curriculum"
-          title="Three Months. Engineering Milestones."
+          title="Three Months. Six Engineering Milestones."
           subtitle="Each month builds systematically - from Python and data mastery to building and shipping complete AI systems at scale."
           subtitleClassName="text-center text-balance"
         />
