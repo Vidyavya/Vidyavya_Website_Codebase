@@ -45,6 +45,7 @@ const AdvancedAI = () => {
         title="Advanced AI Career Program | Vidyavya"
         description="Master GenAI, LLM engineering, RAG, and Agentic AI systems at Vidyavya through hands-on projects and expert mentorship."
         url="https://www.vidyavya.com/programs/advanced-ai"
+        noindex={true}
       />
       {/* Dark + Gradient Premium Hero Section */}
       <section className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-[#0A0611] text-white">

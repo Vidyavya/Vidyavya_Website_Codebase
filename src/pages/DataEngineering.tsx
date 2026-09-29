@@ -48,6 +48,7 @@ const DataEngineering = () => {
         title="Data Engineering Program | Vidyavya"
         description="A 6-month Data Engineering program at Vidyavya with real-world projects, mentorship, and career readiness training in Pune."
         url="https://www.vidyavya.com/programs/data-engineering"
+        noindex={true}
       />
       {/* Dark + Gradient Premium Hero Section */}
       <section className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-[#0A1628] text-white">

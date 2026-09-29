@@ -39,7 +39,7 @@ const About = () => {
     <Layout>
       <SEO 
         title="About Us | Vidyavya"
-        description="Learn about Vidyavya's mission to train the next generation of AI professionals through real-world learning."
+        description="Learn about Vidyavya's mission to shape tomorrow's tech leaders through industry-aligned AI/ML engineering education and corporate internship experience."
         url="https://www.vidyavya.com/about"
       />
       {/* Hero */}
