@@ -32,14 +32,6 @@ const founders = [
     image: '/founders/siddharth.jpeg',
     linkedin: 'https://www.linkedin.com/in/siddharth-surve-a336131b9/',
   },
-  {
-    name: 'Saachin Mane',
-    role: 'Co-founder',
-    bio: 'Saachin is a tech leader with deep expertise in data, cloud, AI and automation. Founder of Yukosa and Meta for Data, he is passionate about building next-generation technology and aligning education with real-world industry demands.',
-    initials: 'SM',
-    image: '/founders/saachin.jpeg',
-    linkedin: 'https://www.linkedin.com/in/saachin-mane-75070b186/',
-  },
 ];
 
 const About = () => {
@@ -166,11 +158,11 @@ const About = () => {
       {/* Founders */}
       <Section className="py-8 md:py-12">
         <SectionHeader
-          label="Founding Team"
-          title="Meet Our Founders"
-          subtitle="Industry veterans committed to transforming tech education in India."
+          label="Leadership"
+          title="Meet Our Founder"
+          subtitle="Industry veteran committed to transforming tech education in India."
         />
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="max-w-xl mx-auto">
           {founders.map((founder, index) => (
             <motion.div
               key={founder.name}

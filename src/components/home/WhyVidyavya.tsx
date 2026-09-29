@@ -45,7 +45,7 @@ const features = [
 
 const WhyVidyavya = () => {
   return (
-    <Section className="pt-6 md:pt-10 pb-12 md:pb-16">
+    <Section className="pt-6 md:pt-10 pb-6 md:pb-8">
       <SectionHeader
         label="Why Choose Vidyavya?"
         title="Built for the Future of AI"

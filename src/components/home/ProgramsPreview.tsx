@@ -22,7 +22,7 @@ const program = {
 
 const ProgramsPreview = () => {
   return (
-    <Section variant="cream">
+    <Section variant="cream" className="pt-6 md:pt-8 pb-12 md:pb-16">
       <SectionHeader
         label="Our Program"
         title="Build Your AI Career"
